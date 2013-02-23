@@ -10,13 +10,6 @@ class SchoolEnrollment(Base):
    SCH_STUDENT_ENTERED = Column(Integer)
    SCH_STUDENT_WITHDREW = Column(Integer)
 
-
-
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
-    fullname = Column(String)
-    password = Column(String)
-
 class SchoolEthnicityLowIncome(Base):
 	__tablename__ = "SCHOOL_ETHNICITY_LOW_INCOME"
 
