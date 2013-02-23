@@ -1,5 +1,6 @@
 from sqlalchemy import *
 
+
 class SchoolEnrollment(Base):
   __tablename__ = 'SCHOOL_ENROLLMENT'
 
