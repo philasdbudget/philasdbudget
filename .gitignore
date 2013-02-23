@@ -42,4 +42,7 @@ nosetests.xml
 # see install.sh
 _install.log
 
+# Ignore pdfs and tar files
 *.pdf
+
+*.tar.gz
