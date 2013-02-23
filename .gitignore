@@ -37,3 +37,5 @@ nosetests.xml
 *.swp
 ~*
 
+# see install.sh
+_install.log
