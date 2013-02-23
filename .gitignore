@@ -41,3 +41,5 @@ nosetests.xml
 
 # see install.sh
 _install.log
+
+*.pdf
