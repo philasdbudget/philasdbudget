@@ -72,10 +72,8 @@ exit if (!defined $final_total);
 $final_total =~ s/[\,\.]+//g;
 if ($running_total != $final_total) {
     print "--totals mis-match! calculated: $running_total, total: $final_total, difference: ", $final_total - $running_total, "\n";
-#    exit 1;
+    exit 1;
 }
-#print "final total: $final_total\n";
-
 
 sub usage() {
     print "\n";
