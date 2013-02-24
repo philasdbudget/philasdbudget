@@ -7,7 +7,9 @@ engine = create_engine(
 
 metadata = MetaData(bind=engine)
 
-SchoolEnrollment = Table('school_enrollment', metadata, autoload=True)
+SchoolEnrollment = Table('school_enrollment', metadata,
+                         Column('school_code', None, ForeignKey('ulcs.ulcs')),
+                         autoload=True)
 
 SchoolEthnicityLowIncome = Table('school_ethnicity_low_income',
                                  metadata, autoload=True)
@@ -24,8 +26,11 @@ Budget = Table('budget', metadata,
                Column('snapshot', None, ForeignKey('snapshots.id')),
                autoload=True)
 Item = Table('item', metadata, autoload=True)
-Snapshot = Table('snapshots', metadata, autoload=True)
+Snapshot = Table('snapshots', metadata,
+                 Column('schoolyear', None, ForeignKey('school_enrollment.school_year')),
+                 autoload=True)
 Ulcs = Table('ulcs', metadata, autoload=True)
+
 SchoolLocations = Table('school_location', metadata,
                         GeometryExtensionColumn('geom',Point(2)),
                         Column('school_code', None, ForeignKey('ulcs.ulcs')),
