@@ -47,9 +47,14 @@ vagrant ssh
 
 # Running on the vagrant box...
 
+# You can use the pre-saved budget data if you don't want
+# to deal with the above steps
+cd /vagrant/school_data
+gunzip budget_data.sql.gz
+
 # Load the budget data
 # Password: phillysd
-psql phillysd phillysd -h localhost -f /vagrant/budget_data.sql
+psql phillysd phillysd -h localhost -f /vagrant/school_data/budget_data.sql
 psql phillysd phillysd -h localhost -f /vagrant/scripts/normalize.sql
 
 # Load extra school data
