@@ -7,11 +7,12 @@ L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Li
 
 var school_points;
 
-var school_points = $.getJSON("/api/schools", function(json) { school_points = json;});
+var school_points = $.getJSON("/api/schools",
+	function(json) { school_points = json;});
 
 function create_handler(ulcs) {
 	return function () {
-		console.log(ulcs);
+		school_summary(ulcs);
 	};
 };
 
@@ -30,3 +31,10 @@ $(window).load(function() {
 	};
 });
 
+
+
+function school_summary (ulcs) {
+	$.getJSON("/api/budget/" + ulcs + "/181", function(data) {
+		$(".school-summary").append("<h1>This is a test</h1>");
+	});
+};
