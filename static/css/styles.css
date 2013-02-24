@@ -1,3 +1,9 @@
 #map { 
 	height: 400px;
 }
+
+.school-summary {
+	float: left;
+	width: 300px;
+	height: 360px;
+}
