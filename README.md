@@ -30,7 +30,7 @@ find data_dir -iname \*.txt -exec scripts/parse.py {} \;
 scripts/create_sql.py data_dir budget_data.sql
 ```
 
-### Vagrant
+### Running the Server
 
 There is a Vagrantfile included that can be used to start
 up a new database server to work with the database
@@ -41,9 +41,16 @@ vagrant up
 vagrant ssh
 
 # Running on the vagrant box...
+
+# Load the budget data
 # Password: phillysd
 psql phillysd phillysd -h localhost -f /vagrant/budget_data.sql
 psql phillysd phillysd -h localhost -f /vagrant/normalize.sql
+
+# Load extra school data
+# You have to be in /vagrant/school_data for the data to load properly
+cd /vagrant/school_data
+psql phillysd phillysd -h localhost -f
 
 exit
 ```
