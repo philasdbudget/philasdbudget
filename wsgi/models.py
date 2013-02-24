@@ -1,6 +1,6 @@
 from settings import USER, PASSWORD, DB, HOST
 from sqlalchemy import *
-# from sqlalchemy.ext.declarative import declarative_base
+from geoalchemy import *
 
 engine = create_engine(
   "postgresql://%s:%s@%s/%s" % (USER,PASSWORD,HOST,DB))
@@ -26,6 +26,10 @@ Budget = Table('budget', metadata,
 Item = Table('item', metadata, autoload=True)
 Snapshot = Table('snapshots', metadata, autoload=True)
 Ulcs = Table('ulcs', metadata, autoload=True)
+SchoolLocations = Table('school_location', metadata,
+                        GeometryExtensionColumn('geom',Point(2)),
+                        Column('school_code', None, ForeignKey('ulcs.ulcs')),
+                        Column('id', Integer, primary_key=True))
 
 # conn = engine.connect()
 # for row in conn.execute(select([Budget.join(Item).join(Snapshot).join(Ulcs)]).limit(2)):

@@ -21,10 +21,13 @@ def dates():
 @app.route('/schools')
 def schools():
     schools = []
-    q = select([Ulcs])
-    for pk, ulcs in conn.execute(q):
+    q = select([Ulcs.join(SchoolLocations)]).apply_labels()
+    for row in conn.execute(q):
+        ulcs = row['ulcs_ulcs']
         schools.append({
             'ulcs': ulcs,
+            'geom': map(lambda z: "%2.5f" % z,
+                        row['school_location_geom'].coords(engine)),
             'link': 'http://%s/budget/%s' % (request.host, ulcs)
         })
     return dumps(schools)
