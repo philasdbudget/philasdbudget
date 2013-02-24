@@ -1,6 +1,7 @@
 # C extensions
 *.so
 scripts/txt
+.vagrant
 
 # Packages
 *.egg
