@@ -6,11 +6,11 @@ from json import dumps
 app = Flask(__name__)
 conn = engine.connect()
 
-@app.route('/')
+@app.route('/api')
 def hello():
     return 'Hello World!'
 
-@app.route('/dates')
+@app.route('/api/dates')
 def dates():
     snapshots = {}
     q = select([Snapshot])
@@ -18,7 +18,7 @@ def dates():
         snapshots[snid] = descr
     return dumps(snapshots)
 
-@app.route('/schools')
+@app.route('/api/schools')
 def schools():
     schools = []
     q = select([Ulcs.join(SchoolLocations)]).apply_labels()
@@ -32,7 +32,7 @@ def schools():
         })
     return dumps(schools)
 
-@app.route('/budget/<school>')
+@app.route('/api/budget/<school>')
 def years_for_school(school):
     q = select([Budget.join(Item).join(Ulcs).join(Snapshot)])\
         .where(Ulcs.c.ulcs==school)\
@@ -49,7 +49,7 @@ def years_for_school(school):
 
     return dumps(years)
 
-@app.route('/budget/<school>/<snapshot>')
+@app.route('/api/budget/<school>/<snapshot>')
 def budget(school, snapshot):
     budget = []
     q = select([Budget.join(Item).join(Ulcs).join(Snapshot)])\
@@ -74,7 +74,7 @@ def budget(school, snapshot):
 
     return dumps(budget)
 
-@app.route('/budgetitem/<itemid>')
+@app.route('/api/budgetitem/<itemid>')
 def budget_item(itemid):
     budget = {}
     q = select([Budget.join(Item).join(Ulcs).join(Snapshot)])\
