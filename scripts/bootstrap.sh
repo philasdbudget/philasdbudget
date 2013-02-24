@@ -8,6 +8,7 @@ fi
 
 set -x
 
+ROOT=`pwd`
 DB_USER='phillysd'
 DB_PASS='phillysd'
 DB_DATABASE='phillysd'
@@ -56,9 +57,9 @@ server {
     listen       80;
     server_name  _;
 
-    root /vagrant/static;
+    root $ROOT/static;
 
-    location / { try_files $uri @flaskapp; }
+    location / { try_files \$uri @flaskapp; }
     location @flaskapp {
       proxy_pass http://127.0.0.1:5000;
     }
@@ -82,7 +83,7 @@ description "unicorn"
 start on runlevel [2345]
 stop on runlevel [06]
 
-chdir /vagrant/wsgi
+chdir $ROOT/wsgi
 exec /home/vagrant/envs/phillysd/bin/gunicorn app:app -b 0.0.0.0:5000
 
 EOF
