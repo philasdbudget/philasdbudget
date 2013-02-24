@@ -6,6 +6,8 @@ if [ `whoami` != "root" ]; then
   exit 1
 fi
 
+sudo update-locale LANG=en_US.utf8
+
 set -x
 
 DB_USER='phillysd'

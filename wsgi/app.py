@@ -95,8 +95,25 @@ def budget(school, snapshot):
 
     return dumps(budget)
 
+@app.route('/api/budgetitem/')
 @app.route('/api/budgetitem/<itemid>')
-def budget_item(itemid):
+def budget_item(itemid=None):
+    # No itemid specified, list all of them
+    if itemid is None:
+        items = []
+        q = select([Budget.join(Item)])\
+            .distinct(Item.c.item)\
+            .apply_labels()
+
+        for row in conn.execute(q):
+            items.append(
+                {'item': row['item_item'],
+                 'id': row['item_id'],
+                 'link': 'http://%s/budgetitem/%s' % (request.host, row['item_id'])})
+                 
+        return dumps(items)
+
+    # Return the requested budget item
     budget = {}
     q = select([Budget.join(Item).join(Ulcs).join(Snapshot)])\
         .where(Item.c.id==itemid)\
