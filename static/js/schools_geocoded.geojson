@@ -1,0 +1,653 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "school_code": "3321", "lat": "39.961613", "lon": "-75.161505" }, "geometry": { "type": "Point", "coordinates": [ -75.161505, 39.961613 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1020", "lat": "39.95778", "lon": "-75.219431" }, "geometry": { "type": "Point", "coordinates": [ -75.219431, 39.95778 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2410", "lat": "39.92219", "lon": "-75.182567" }, "geometry": { "type": "Point", "coordinates": [ -75.182567, 39.92219 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1010", "lat": "39.921477", "lon": "-75.234124" }, "geometry": { "type": "Point", "coordinates": [ -75.234124, 39.921477 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7370", "lat": "40.03484", "lon": "-75.117943" }, "geometry": { "type": "Point", "coordinates": [ -75.117943, 40.03484 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1080", "lat": "39.95694", "lon": "-75.194161" }, "geometry": { "type": "Point", "coordinates": [ -75.194161, 39.95694 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1100", "lat": "39.95855", "lon": "-75.238419" }, "geometry": { "type": "Point", "coordinates": [ -75.238419, 39.95855 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1110", "lat": "39.941754", "lon": "-75.225633" }, "geometry": { "type": "Point", "coordinates": [ -75.225633, 39.941754 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1130", "lat": "39.921082", "lon": "-75.231934" }, "geometry": { "type": "Point", "coordinates": [ -75.231934, 39.921082 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1150", "lat": "39.894889", "lon": "-75.246951" }, "geometry": { "type": "Point", "coordinates": [ -75.246951, 39.894889 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1200", "lat": "39.96487", "lon": "-75.23864" }, "geometry": { "type": "Point", "coordinates": [ -75.23864, 39.96487 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1440", "lat": "39.907113", "lon": "-75.249172" }, "geometry": { "type": "Point", "coordinates": [ -75.249172, 39.907113 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1460", "lat": "39.946893", "lon": "-75.243882" }, "geometry": { "type": "Point", "coordinates": [ -75.243882, 39.946893 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1470", "lat": "39.962652", "lon": "-75.212275" }, "geometry": { "type": "Point", "coordinates": [ -75.212275, 39.962652 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1490", "lat": "39.973056", "lon": "-75.214092" }, "geometry": { "type": "Point", "coordinates": [ -75.214092, 39.973056 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1530", "lat": "39.974728", "lon": "-75.212622" }, "geometry": { "type": "Point", "coordinates": [ -75.212622, 39.974728 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1580", "lat": "39.964149", "lon": "-75.215543" }, "geometry": { "type": "Point", "coordinates": [ -75.215543, 39.964149 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1230", "lat": "39.95245", "lon": "-75.242911" }, "geometry": { "type": "Point", "coordinates": [ -75.242911, 39.95245 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1250", "lat": "39.927913", "lon": "-75.239655" }, "geometry": { "type": "Point", "coordinates": [ -75.239655, 39.927913 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1260", "lat": "39.940045", "lon": "-75.21654" }, "geometry": { "type": "Point", "coordinates": [ -75.21654, 39.940045 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7130", "lat": "40.051281", "lon": "-75.147778" }, "geometry": { "type": "Point", "coordinates": [ -75.147778, 40.051281 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1300", "lat": "39.9478", "lon": "-75.230377" }, "geometry": { "type": "Point", "coordinates": [ -75.230377, 39.9478 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1330", "lat": "39.95359", "lon": "-75.226799" }, "geometry": { "type": "Point", "coordinates": [ -75.226799, 39.95359 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1340", "lat": "39.9546", "lon": "-75.216041" }, "geometry": { "type": "Point", "coordinates": [ -75.216041, 39.9546 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1350", "lat": "39.941078", "lon": "-75.232529" }, "geometry": { "type": "Point", "coordinates": [ -75.232529, 39.941078 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1360", "lat": "39.966093", "lon": "-75.194118" }, "geometry": { "type": "Point", "coordinates": [ -75.194118, 39.966093 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1370", "lat": "39.937569", "lon": "-75.223091" }, "geometry": { "type": "Point", "coordinates": [ -75.223091, 39.937569 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1380", "lat": "39.923902", "lon": "-75.227585" }, "geometry": { "type": "Point", "coordinates": [ -75.227585, 39.923902 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1390", "lat": "39.960192", "lon": "-75.193832" }, "geometry": { "type": "Point", "coordinates": [ -75.193832, 39.960192 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1400", "lat": "39.915913", "lon": "-75.236175" }, "geometry": { "type": "Point", "coordinates": [ -75.236175, 39.915913 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1410", "lat": "39.967227", "lon": "-75.218819" }, "geometry": { "type": "Point", "coordinates": [ -75.218819, 39.967227 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1420", "lat": "39.966214", "lon": "-75.211035" }, "geometry": { "type": "Point", "coordinates": [ -75.211035, 39.966214 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1430", "lat": "39.944292", "lon": "-75.209597" }, "geometry": { "type": "Point", "coordinates": [ -75.209597, 39.944292 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2000", "lat": "39.905537", "lon": "-75.173531" }, "geometry": { "type": "Point", "coordinates": [ -75.173531, 39.905537 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2010", "lat": "39.96288", "lon": "-75.16132" }, "geometry": { "type": "Point", "coordinates": [ -75.16132, 39.96288 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2020", "lat": "39.939541", "lon": "-75.166412" }, "geometry": { "type": "Point", "coordinates": [ -75.166412, 39.939541 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2090", "lat": "39.925411", "lon": "-75.160828" }, "geometry": { "type": "Point", "coordinates": [ -75.160828, 39.925411 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2130", "lat": "39.97641", "lon": "-75.173729" }, "geometry": { "type": "Point", "coordinates": [ -75.173729, 39.97641 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2140", "lat": "39.963017", "lon": "-75.166045" }, "geometry": { "type": "Point", "coordinates": [ -75.166045, 39.963017 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2160", "lat": "39.92329", "lon": "-75.150528" }, "geometry": { "type": "Point", "coordinates": [ -75.150528, 39.92329 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2190", "lat": "39.915741", "lon": "-75.162881" }, "geometry": { "type": "Point", "coordinates": [ -75.162881, 39.915741 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2200", "lat": "39.93545", "lon": "-75.19727" }, "geometry": { "type": "Point", "coordinates": [ -75.19727, 39.93545 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2210", "lat": "39.96961", "lon": "-75.174099" }, "geometry": { "type": "Point", "coordinates": [ -75.174099, 39.96961 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2240", "lat": "39.91478", "lon": "-75.17619" }, "geometry": { "type": "Point", "coordinates": [ -75.17619, 39.91478 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2260", "lat": "39.934499", "lon": "-75.170633" }, "geometry": { "type": "Point", "coordinates": [ -75.170633, 39.934499 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2480", "lat": "39.942", "lon": "-75.175841" }, "geometry": { "type": "Point", "coordinates": [ -75.175841, 39.942 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2490", "lat": "39.964611", "lon": "-75.167824" }, "geometry": { "type": "Point", "coordinates": [ -75.167824, 39.964611 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2510", "lat": "39.93462", "lon": "-75.16362" }, "geometry": { "type": "Point", "coordinates": [ -75.16362, 39.93462 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2520", "lat": "39.918948", "lon": "-75.16868" }, "geometry": { "type": "Point", "coordinates": [ -75.16868, 39.918948 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2690", "lat": "39.91732", "lon": "-75.15467" }, "geometry": { "type": "Point", "coordinates": [ -75.15467, 39.91732 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2720", "lat": "39.927509", "lon": "-75.15094" }, "geometry": { "type": "Point", "coordinates": [ -75.15094, 39.927509 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2730", "lat": "39.93354", "lon": "-75.15261" }, "geometry": { "type": "Point", "coordinates": [ -75.15261, 39.93354 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2540", "lat": "39.920924", "lon": "-75.160182" }, "geometry": { "type": "Point", "coordinates": [ -75.160182, 39.920924 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2580", "lat": "39.930026", "lon": "-75.156584" }, "geometry": { "type": "Point", "coordinates": [ -75.156584, 39.930026 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2590", "lat": "39.93642", "lon": "-75.153771" }, "geometry": { "type": "Point", "coordinates": [ -75.153771, 39.93642 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5600", "lat": "39.984711", "lon": "-75.127083" }, "geometry": { "type": "Point", "coordinates": [ -75.127083, 39.984711 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2630", "lat": "39.919199", "lon": "-75.150482" }, "geometry": { "type": "Point", "coordinates": [ -75.150482, 39.919199 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2640", "lat": "39.925947", "lon": "-75.160703" }, "geometry": { "type": "Point", "coordinates": [ -75.160703, 39.925947 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2290", "lat": "39.964432", "lon": "-75.162718" }, "geometry": { "type": "Point", "coordinates": [ -75.162718, 39.964432 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2320", "lat": "39.92522", "lon": "-75.17626" }, "geometry": { "type": "Point", "coordinates": [ -75.17626, 39.92522 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2340", "lat": "39.944679", "lon": "-75.153397" }, "geometry": { "type": "Point", "coordinates": [ -75.153397, 39.944679 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2370", "lat": "39.929655", "lon": "-75.181948" }, "geometry": { "type": "Point", "coordinates": [ -75.181948, 39.929655 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2380", "lat": "39.939614", "lon": "-75.151243" }, "geometry": { "type": "Point", "coordinates": [ -75.151243, 39.939614 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2390", "lat": "39.97574", "lon": "-75.17862" }, "geometry": { "type": "Point", "coordinates": [ -75.17862, 39.97574 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2420", "lat": "39.97741", "lon": "-75.174813" }, "geometry": { "type": "Point", "coordinates": [ -75.174813, 39.97741 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2440", "lat": "39.93519", "lon": "-75.1757" }, "geometry": { "type": "Point", "coordinates": [ -75.1757, 39.93519 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2450", "lat": "39.94064", "lon": "-75.171242" }, "geometry": { "type": "Point", "coordinates": [ -75.171242, 39.94064 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2470", "lat": "39.952572", "lon": "-75.177528" }, "geometry": { "type": "Point", "coordinates": [ -75.177528, 39.952572 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7380", "lat": "40.01538", "lon": "-75.13733" }, "geometry": { "type": "Point", "coordinates": [ -75.13733, 40.01538 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7390", "lat": "40.02852", "lon": "-75.12928" }, "geometry": { "type": "Point", "coordinates": [ -75.12928, 40.02852 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7400", "lat": "40.03072", "lon": "-75.12139" }, "geometry": { "type": "Point", "coordinates": [ -75.12139, 40.03072 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7430", "lat": "40.015018", "lon": "-75.067833" }, "geometry": { "type": "Point", "coordinates": [ -75.067833, 40.015018 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1280", "lat": "39.952268", "lon": "-75.207312" }, "geometry": { "type": "Point", "coordinates": [ -75.207312, 39.952268 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7150", "lat": "40.012089", "lon": "-75.112007" }, "geometry": { "type": "Point", "coordinates": [ -75.112007, 40.012089 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7440", "lat": "40.007373", "lon": "-75.137886" }, "geometry": { "type": "Point", "coordinates": [ -75.137886, 40.007373 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7460", "lat": "40.030175", "lon": "-75.0757" }, "geometry": { "type": "Point", "coordinates": [ -75.0757, 40.030175 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7470", "lat": "40.000035", "lon": "-75.066246" }, "geometry": { "type": "Point", "coordinates": [ -75.066246, 40.000035 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7490", "lat": "40.048279", "lon": "-75.149948" }, "geometry": { "type": "Point", "coordinates": [ -75.149948, 40.048279 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7500", "lat": "40.019536", "lon": "-75.121736" }, "geometry": { "type": "Point", "coordinates": [ -75.121736, 40.019536 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7510", "lat": "40.003378", "lon": "-75.148772" }, "geometry": { "type": "Point", "coordinates": [ -75.148772, 40.003378 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7530", "lat": "40.059353", "lon": "-75.148715" }, "geometry": { "type": "Point", "coordinates": [ -75.148715, 40.059353 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7730", "lat": "40.00735", "lon": "-75.128904" }, "geometry": { "type": "Point", "coordinates": [ -75.128904, 40.00735 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8020", "lat": "40.054798", "lon": "-75.072304" }, "geometry": { "type": "Point", "coordinates": [ -75.072304, 40.054798 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8240", "lat": "40.0284", "lon": "-75.047272" }, "geometry": { "type": "Point", "coordinates": [ -75.047272, 40.0284 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8250", "lat": "40.03338", "lon": "-75.03762" }, "geometry": { "type": "Point", "coordinates": [ -75.03762, 40.03338 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8260", "lat": "40.076511", "lon": "-75.082138" }, "geometry": { "type": "Point", "coordinates": [ -75.082138, 40.076511 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8270", "lat": "40.05416", "lon": "-75.00857" }, "geometry": { "type": "Point", "coordinates": [ -75.00857, 40.05416 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8300", "lat": "40.039285", "lon": "-75.053253" }, "geometry": { "type": "Point", "coordinates": [ -75.053253, 40.039285 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8310", "lat": "40.04874", "lon": "-75.07673" }, "geometry": { "type": "Point", "coordinates": [ -75.07673, 40.04874 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8320", "lat": "40.08016", "lon": "-74.98803" }, "geometry": { "type": "Point", "coordinates": [ -74.98803, 40.08016 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8340", "lat": "40.04485", "lon": "-75.06642" }, "geometry": { "type": "Point", "coordinates": [ -75.06642, 40.04485 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8350", "lat": "40.037769", "lon": "-75.073112" }, "geometry": { "type": "Point", "coordinates": [ -75.073112, 40.037769 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8030", "lat": "40.105992", "lon": "-75.027288" }, "geometry": { "type": "Point", "coordinates": [ -75.027288, 40.105992 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8090", "lat": "40.092468", "lon": "-75.01255" }, "geometry": { "type": "Point", "coordinates": [ -75.01255, 40.092468 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8120", "lat": "40.053242", "lon": "-75.069562" }, "geometry": { "type": "Point", "coordinates": [ -75.069562, 40.053242 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8140", "lat": "40.045811", "lon": "-75.045303" }, "geometry": { "type": "Point", "coordinates": [ -75.045303, 40.045811 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8160", "lat": "40.093272", "lon": "-75.052328" }, "geometry": { "type": "Point", "coordinates": [ -75.052328, 40.093272 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8180", "lat": "40.067626", "lon": "-74.988379" }, "geometry": { "type": "Point", "coordinates": [ -74.988379, 40.067626 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8200", "lat": "40.029653", "lon": "-75.062562" }, "geometry": { "type": "Point", "coordinates": [ -75.062562, 40.029653 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8210", "lat": "40.043825", "lon": "-75.02444" }, "geometry": { "type": "Point", "coordinates": [ -75.02444, 40.043825 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8230", "lat": "40.06139", "lon": "-75.0815" }, "geometry": { "type": "Point", "coordinates": [ -75.0815, 40.06139 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8010", "lat": "40.041592", "lon": "-75.044182" }, "geometry": { "type": "Point", "coordinates": [ -75.044182, 40.041592 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8360", "lat": "40.058197", "lon": "-75.059428" }, "geometry": { "type": "Point", "coordinates": [ -75.059428, 40.058197 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8370", "lat": "40.12006", "lon": "-75.009422" }, "geometry": { "type": "Point", "coordinates": [ -75.009422, 40.12006 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8420", "lat": "40.096409", "lon": "-74.971008" }, "geometry": { "type": "Point", "coordinates": [ -74.971008, 40.096409 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8430", "lat": "40.096054", "lon": "-75.057637" }, "geometry": { "type": "Point", "coordinates": [ -75.057637, 40.096054 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8440", "lat": "40.113103", "lon": "-75.023216" }, "geometry": { "type": "Point", "coordinates": [ -75.023216, 40.113103 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8410", "lat": "40.059719", "lon": "-75.028" }, "geometry": { "type": "Point", "coordinates": [ -75.028, 40.059719 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4060", "lat": "39.995521", "lon": "-75.166677" }, "geometry": { "type": "Point", "coordinates": [ -75.166677, 39.995521 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4100", "lat": "39.985971", "lon": "-75.241989" }, "geometry": { "type": "Point", "coordinates": [ -75.241989, 39.985971 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4140", "lat": "39.991001", "lon": "-75.185188" }, "geometry": { "type": "Point", "coordinates": [ -75.185188, 39.991001 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4150", "lat": "40.003182", "lon": "-75.178032" }, "geometry": { "type": "Point", "coordinates": [ -75.178032, 40.003182 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4020", "lat": "39.981872", "lon": "-75.238848" }, "geometry": { "type": "Point", "coordinates": [ -75.238848, 39.981872 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4030", "lat": "39.98378", "lon": "-75.161346" }, "geometry": { "type": "Point", "coordinates": [ -75.161346, 39.98378 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8380", "lat": "40.065948", "lon": "-75.052261" }, "geometry": { "type": "Point", "coordinates": [ -75.052261, 40.065948 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8390", "lat": "40.081591", "lon": "-74.975979" }, "geometry": { "type": "Point", "coordinates": [ -74.975979, 40.081591 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8400", "lat": "40.088698", "lon": "-75.02857" }, "geometry": { "type": "Point", "coordinates": [ -75.02857, 40.088698 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4530", "lat": "39.9843", "lon": "-75.18021" }, "geometry": { "type": "Point", "coordinates": [ -75.18021, 39.9843 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4560", "lat": "39.980419", "lon": "-75.180527" }, "geometry": { "type": "Point", "coordinates": [ -75.180527, 39.980419 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4570", "lat": "39.97824", "lon": "-75.16456" }, "geometry": { "type": "Point", "coordinates": [ -75.16456, 39.97824 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4220", "lat": "39.985008", "lon": "-75.182968" }, "geometry": { "type": "Point", "coordinates": [ -75.182968, 39.985008 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4240", "lat": "39.974845", "lon": "-75.24987" }, "geometry": { "type": "Point", "coordinates": [ -75.24987, 39.974845 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4270", "lat": "39.987036", "lon": "-75.174317" }, "geometry": { "type": "Point", "coordinates": [ -75.174317, 39.987036 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4280", "lat": "39.992", "lon": "-75.23751" }, "geometry": { "type": "Point", "coordinates": [ -75.23751, 39.992 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4300", "lat": "39.976894", "lon": "-75.229806" }, "geometry": { "type": "Point", "coordinates": [ -75.229806, 39.976894 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6330", "lat": "40.048079", "lon": "-75.160897" }, "geometry": { "type": "Point", "coordinates": [ -75.160897, 40.048079 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4310", "lat": "40.00491", "lon": "-75.15405" }, "geometry": { "type": "Point", "coordinates": [ -75.15405, 40.00491 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6390", "lat": "40.018379", "lon": "-75.1576" }, "geometry": { "type": "Point", "coordinates": [ -75.1576, 40.018379 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4370", "lat": "39.98238", "lon": "-75.245483" }, "geometry": { "type": "Point", "coordinates": [ -75.245483, 39.98238 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4380", "lat": "39.99894", "lon": "-75.16869" }, "geometry": { "type": "Point", "coordinates": [ -75.16869, 39.99894 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4390", "lat": "39.98796", "lon": "-75.16923" }, "geometry": { "type": "Point", "coordinates": [ -75.16923, 39.98796 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4400", "lat": "39.992027", "lon": "-75.158278" }, "geometry": { "type": "Point", "coordinates": [ -75.158278, 39.992027 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4430", "lat": "40.00138", "lon": "-75.17448" }, "geometry": { "type": "Point", "coordinates": [ -75.17448, 40.00138 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4440", "lat": "39.9977", "lon": "-75.18357" }, "geometry": { "type": "Point", "coordinates": [ -75.18357, 39.9977 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4450", "lat": "39.991001", "lon": "-75.185188" }, "geometry": { "type": "Point", "coordinates": [ -75.185188, 39.991001 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4460", "lat": "39.984959", "lon": "-75.15834" }, "geometry": { "type": "Point", "coordinates": [ -75.15834, 39.984959 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4470", "lat": "39.99057", "lon": "-75.176948" }, "geometry": { "type": "Point", "coordinates": [ -75.176948, 39.99057 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4480", "lat": "39.974376", "lon": "-75.254111" }, "geometry": { "type": "Point", "coordinates": [ -75.254111, 39.974376 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5020", "lat": "40.011055", "lon": "-75.12862" }, "geometry": { "type": "Point", "coordinates": [ -75.12862, 40.011055 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5060", "lat": "39.99213", "lon": "-75.11201" }, "geometry": { "type": "Point", "coordinates": [ -75.11201, 39.99213 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5070", "lat": "40.064869", "lon": "-75.19503" }, "geometry": { "type": "Point", "coordinates": [ -75.19503, 40.064869 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5400", "lat": "39.983075", "lon": "-75.11043" }, "geometry": { "type": "Point", "coordinates": [ -75.11043, 39.983075 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5410", "lat": "39.99405", "lon": "-75.130973" }, "geometry": { "type": "Point", "coordinates": [ -75.130973, 39.99405 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5420", "lat": "39.9865", "lon": "-75.139504" }, "geometry": { "type": "Point", "coordinates": [ -75.139504, 39.9865 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5430", "lat": "39.985191", "lon": "-75.097199" }, "geometry": { "type": "Point", "coordinates": [ -75.097199, 39.985191 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5440", "lat": "39.992664", "lon": "-75.115096" }, "geometry": { "type": "Point", "coordinates": [ -75.115096, 39.992664 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5450", "lat": "39.979872", "lon": "-75.110353" }, "geometry": { "type": "Point", "coordinates": [ -75.110353, 39.979872 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5470", "lat": "40.002861", "lon": "-75.130384" }, "geometry": { "type": "Point", "coordinates": [ -75.130384, 40.002861 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5480", "lat": "39.963619", "lon": "-75.148209" }, "geometry": { "type": "Point", "coordinates": [ -75.148209, 39.963619 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5490", "lat": "40.01752", "lon": "-75.134654" }, "geometry": { "type": "Point", "coordinates": [ -75.134654, 40.01752 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5500", "lat": "40.029414", "lon": "-75.134052" }, "geometry": { "type": "Point", "coordinates": [ -75.134052, 40.029414 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5530", "lat": "39.999805", "lon": "-75.114554" }, "geometry": { "type": "Point", "coordinates": [ -75.114554, 39.999805 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5560", "lat": "39.965284", "lon": "-75.156187" }, "geometry": { "type": "Point", "coordinates": [ -75.156187, 39.965284 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5590", "lat": "39.995571", "lon": "-75.105308" }, "geometry": { "type": "Point", "coordinates": [ -75.105308, 39.995571 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5680", "lat": "40.001179", "lon": "-75.135239" }, "geometry": { "type": "Point", "coordinates": [ -75.135239, 40.001179 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1050", "lat": "39.956772", "lon": "-75.205176" }, "geometry": { "type": "Point", "coordinates": [ -75.205176, 39.956772 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1060", "lat": "39.899253", "lon": "-75.245906" }, "geometry": { "type": "Point", "coordinates": [ -75.245906, 39.899253 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5080", "lat": "39.962959", "lon": "-75.15908" }, "geometry": { "type": "Point", "coordinates": [ -75.15908, 39.962959 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5110", "lat": "39.97286", "lon": "-75.12774" }, "geometry": { "type": "Point", "coordinates": [ -75.12774, 39.97286 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5150", "lat": "39.968128", "lon": "-75.143478" }, "geometry": { "type": "Point", "coordinates": [ -75.143478, 39.968128 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5170", "lat": "39.991928", "lon": "-75.138672" }, "geometry": { "type": "Point", "coordinates": [ -75.138672, 39.991928 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5200.986665", "lat": "-75.127148", "lon": null }, "geometry": { "type": "Point", "coordinates": [ 0.0, -75.127148 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5230", "lat": "39.99424", "lon": "-75.114975" }, "geometry": { "type": "Point", "coordinates": [ -75.114975, 39.99424 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5280", "lat": "39.99395", "lon": "-75.142031" }, "geometry": { "type": "Point", "coordinates": [ -75.142031, 39.99395 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5290", "lat": "39.98194", "lon": "-75.146" }, "geometry": { "type": "Point", "coordinates": [ -75.146, 39.98194 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5300", "lat": "39.980801", "lon": "-75.127068" }, "geometry": { "type": "Point", "coordinates": [ -75.127068, 39.980801 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5320", "lat": "39.989571", "lon": "-75.145327" }, "geometry": { "type": "Point", "coordinates": [ -75.145327, 39.989571 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5330", "lat": "39.98642", "lon": "-75.13181" }, "geometry": { "type": "Point", "coordinates": [ -75.13181, 39.98642 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5340", "lat": "39.972765", "lon": "-75.145644" }, "geometry": { "type": "Point", "coordinates": [ -75.145644, 39.972765 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5350", "lat": "39.9829", "lon": "-75.14173" }, "geometry": { "type": "Point", "coordinates": [ -75.14173, 39.9829 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5370", "lat": "39.97439", "lon": "-75.13577" }, "geometry": { "type": "Point", "coordinates": [ -75.13577, 39.97439 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5390", "lat": "39.997162", "lon": "-75.141151" }, "geometry": { "type": "Point", "coordinates": [ -75.141151, 39.997162 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6050", "lat": "40.03911", "lon": "-75.14486" }, "geometry": { "type": "Point", "coordinates": [ -75.14486, 40.03911 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6060", "lat": "40.057236", "lon": "-75.161407" }, "geometry": { "type": "Point", "coordinates": [ -75.161407, 40.057236 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6090", "lat": "40.00972", "lon": "-75.18044" }, "geometry": { "type": "Point", "coordinates": [ -75.18044, 40.00972 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6100", "lat": "40.07071", "lon": "-75.17616" }, "geometry": { "type": "Point", "coordinates": [ -75.17616, 40.07071 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6110", "lat": "40.048542", "lon": "-75.175448" }, "geometry": { "type": "Point", "coordinates": [ -75.175448, 40.048542 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6200", "lat": "40.058811", "lon": "-75.167954" }, "geometry": { "type": "Point", "coordinates": [ -75.167954, 40.058811 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6210", "lat": "40.072057", "lon": "-75.170005" }, "geometry": { "type": "Point", "coordinates": [ -75.170005, 40.072057 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6220", "lat": "40.053822", "lon": "-75.178398" }, "geometry": { "type": "Point", "coordinates": [ -75.178398, 40.053822 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6230", "lat": "40.026329", "lon": "-75.166641" }, "geometry": { "type": "Point", "coordinates": [ -75.166641, 40.026329 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6240", "lat": "40.039742", "lon": "-75.175499" }, "geometry": { "type": "Point", "coordinates": [ -75.175499, 40.039742 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6250", "lat": "40.04602", "lon": "-75.196251" }, "geometry": { "type": "Point", "coordinates": [ -75.196251, 40.04602 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6260", "lat": "40.05863", "lon": "-75.19493" }, "geometry": { "type": "Point", "coordinates": [ -75.19493, 40.05863 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6340", "lat": "40.043659", "lon": "-75.15033" }, "geometry": { "type": "Point", "coordinates": [ -75.15033, 40.043659 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6400", "lat": "40.039103", "lon": "-75.145517" }, "geometry": { "type": "Point", "coordinates": [ -75.145517, 40.039103 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6410", "lat": "40.02217", "lon": "-75.206563" }, "geometry": { "type": "Point", "coordinates": [ -75.206563, 40.02217 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6430", "lat": "40.032711", "lon": "-75.166473" }, "geometry": { "type": "Point", "coordinates": [ -75.166473, 40.032711 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6440", "lat": "40.03804", "lon": "-75.189728" }, "geometry": { "type": "Point", "coordinates": [ -75.189728, 40.03804 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6450", "lat": "40.031391", "lon": "-75.230812" }, "geometry": { "type": "Point", "coordinates": [ -75.230812, 40.031391 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6460", "lat": "40.05686", "lon": "-75.16475" }, "geometry": { "type": "Point", "coordinates": [ -75.16475, 40.05686 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6270", "lat": "40.07444", "lon": "-75.20376" }, "geometry": { "type": "Point", "coordinates": [ -75.20376, 40.07444 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6280", "lat": "40.05285", "lon": "-75.15288" }, "geometry": { "type": "Point", "coordinates": [ -75.15288, 40.05285 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6300", "lat": "40.031269", "lon": "-75.151611" }, "geometry": { "type": "Point", "coordinates": [ -75.151611, 40.031269 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6310", "lat": "40.08155", "lon": "-75.174464" }, "geometry": { "type": "Point", "coordinates": [ -75.174464, 40.08155 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6320", "lat": "40.013475", "lon": "-75.191015" }, "geometry": { "type": "Point", "coordinates": [ -75.191015, 40.013475 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4320", "lat": "39.975553", "lon": "-75.265695" }, "geometry": { "type": "Point", "coordinates": [ -75.265695, 39.975553 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6010", "lat": "40.03907", "lon": "-75.150803" }, "geometry": { "type": "Point", "coordinates": [ -75.150803, 40.03907 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6020", "lat": "40.040179", "lon": "-75.176934" }, "geometry": { "type": "Point", "coordinates": [ -75.176934, 40.040179 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6030", "lat": "40.038021", "lon": "-75.222601" }, "geometry": { "type": "Point", "coordinates": [ -75.222601, 40.038021 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6040", "lat": "40.048871", "lon": "-75.219269" }, "geometry": { "type": "Point", "coordinates": [ -75.219269, 40.048871 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6480", "lat": "40.03169", "lon": "-75.21317" }, "geometry": { "type": "Point", "coordinates": [ -75.21317, 40.03169 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6540", "lat": "40.0606", "lon": "-75.254158" }, "geometry": { "type": "Point", "coordinates": [ -75.254158, 40.0606 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7100", "lat": "40.02588", "lon": "-75.14551" }, "geometry": { "type": "Point", "coordinates": [ -75.14551, 40.02588 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7110", "lat": "40.01342", "lon": "-75.073608" }, "geometry": { "type": "Point", "coordinates": [ -75.073608, 40.01342 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7120", "lat": "40.03224", "lon": "-75.09426" }, "geometry": { "type": "Point", "coordinates": [ -75.09426, 40.03224 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7200", "lat": "40.01938", "lon": "-75.11931" }, "geometry": { "type": "Point", "coordinates": [ -75.11931, 40.01938 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7220", "lat": "40.039436", "lon": "-75.084218" }, "geometry": { "type": "Point", "coordinates": [ -75.084218, 40.039436 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6470", "lat": "40.02494", "lon": "-75.171066" }, "geometry": { "type": "Point", "coordinates": [ -75.171066, 40.02494 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7260", "lat": "40.05485", "lon": "-75.139" }, "geometry": { "type": "Point", "coordinates": [ -75.139, 40.05485 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7270", "lat": "40.04304", "lon": "-75.11974" }, "geometry": { "type": "Point", "coordinates": [ -75.11974, 40.04304 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7280", "lat": "40.042339", "lon": "-75.105179" }, "geometry": { "type": "Point", "coordinates": [ -75.105179, 40.042339 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7290", "lat": "40.011761", "lon": "-75.085938" }, "geometry": { "type": "Point", "coordinates": [ -75.085938, 40.011761 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7010", "lat": "40.02257", "lon": "-75.08442" }, "geometry": { "type": "Point", "coordinates": [ -75.08442, 40.02257 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1290", "lat": "39.95575", "lon": "-75.235504" }, "geometry": { "type": "Point", "coordinates": [ -75.235504, 39.95575 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7300", "lat": "40.00784", "lon": "-75.10279" }, "geometry": { "type": "Point", "coordinates": [ -75.10279, 40.00784 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7310", "lat": "40.02113", "lon": "-75.120903" }, "geometry": { "type": "Point", "coordinates": [ -75.120903, 40.02113 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7320", "lat": "40.04124", "lon": "-75.142" }, "geometry": { "type": "Point", "coordinates": [ -75.142, 40.04124 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7330", "lat": "40.02066", "lon": "-75.05931" }, "geometry": { "type": "Point", "coordinates": [ -75.05931, 40.02066 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7350", "lat": "40.04095", "lon": "-75.128665" }, "geometry": { "type": "Point", "coordinates": [ -75.128665, 40.04095 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "7360", "lat": "40.01445", "lon": "-75.08709" }, "geometry": { "type": "Point", "coordinates": [ -75.08709, 40.01445 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6350", "lat": "40.065256", "lon": "-75.159958" }, "geometry": { "type": "Point", "coordinates": [ -75.159958, 40.065256 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6380", "lat": "40.05183", "lon": "-75.239043" }, "geometry": { "type": "Point", "coordinates": [ -75.239043, 40.05183 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5240", "lat": "39.976606", "lon": "-75.116588" }, "geometry": { "type": "Point", "coordinates": [ -75.116588, 39.976606 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5250", "lat": "39.979431", "lon": "-75.153847" }, "geometry": { "type": "Point", "coordinates": [ -75.153847, 39.979431 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5260", "lat": "39.997353", "lon": "-75.121276" }, "geometry": { "type": "Point", "coordinates": [ -75.121276, 39.997353 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1030", "lat": "39.974408", "lon": "-75.204367" }, "geometry": { "type": "Point", "coordinates": [ -75.204367, 39.974408 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "6070", "lat": "40.07071", "lon": "-75.17616" }, "geometry": { "type": "Point", "coordinates": [ -75.17616, 40.07071 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5650", "lat": "39.999779", "lon": "-75.098862" }, "geometry": { "type": "Point", "coordinates": [ -75.098862, 39.999779 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5090", "lat": "39.964149", "lon": "-75.215543" }, "geometry": { "type": "Point", "coordinates": [ -75.215543, 39.964149 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "4330", "lat": "39.975553", "lon": "-75.265695" }, "geometry": { "type": "Point", "coordinates": [ -75.265695, 39.975553 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "1190", "lat": "39.906661", "lon": "-75.248366" }, "geometry": { "type": "Point", "coordinates": [ -75.248366, 39.906661 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "8040", "lat": "40.082893", "lon": "-74.974888" }, "geometry": { "type": "Point", "coordinates": [ -74.974888, 40.082893 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5050", "lat": "39.984852", "lon": "-75.154297" }, "geometry": { "type": "Point", "coordinates": [ -75.154297, 39.984852 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5520", "lat": "39.979431", "lon": "-75.133339" }, "geometry": { "type": "Point", "coordinates": [ -75.133339, 39.979431 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5550", "lat": "39.985166", "lon": "-75.128626" }, "geometry": { "type": "Point", "coordinates": [ -75.128626, 39.985166 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "5510", "lat": "39.98469", "lon": "-75.12685" }, "geometry": { "type": "Point", "coordinates": [ -75.12685, 39.98469 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2670", "lat": "39.950215", "lon": "-75.152145" }, "geometry": { "type": "Point", "coordinates": [ -75.152145, 39.950215 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2650", "lat": "39.95513", "lon": "-75.17642" }, "geometry": { "type": "Point", "coordinates": [ -75.17642, 39.95513 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "2620", "lat": "39.94013", "lon": "-75.161" }, "geometry": { "type": "Point", "coordinates": [ -75.161, 39.94013 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3379", "lat": "39.987964", "lon": "-75.242605" }, "geometry": { "type": "Point", "coordinates": [ -75.242605, 39.987964 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3315", "lat": "39.97963", "lon": "-75.16523" }, "geometry": { "type": "Point", "coordinates": [ -75.16523, 39.97963 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3395", "lat": "40.013483", "lon": "-75.13134" }, "geometry": { "type": "Point", "coordinates": [ -75.13134, 40.013483 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3317", "lat": "39.948959", "lon": "-75.152451" }, "geometry": { "type": "Point", "coordinates": [ -75.152451, 39.948959 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3398", "lat": "39.951787", "lon": "-75.158666" }, "geometry": { "type": "Point", "coordinates": [ -75.158666, 39.951787 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3406", "lat": "39.99818", "lon": "-75.12533" }, "geometry": { "type": "Point", "coordinates": [ -75.12533, 39.99818 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3414", "lat": "40.02918", "lon": "-75.1229" }, "geometry": { "type": "Point", "coordinates": [ -75.1229, 40.02918 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3308", "lat": "39.970606", "lon": "-75.205882" }, "geometry": { "type": "Point", "coordinates": [ -75.205882, 39.970606 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3368", "lat": "39.967209", "lon": "-75.205017" }, "geometry": { "type": "Point", "coordinates": [ -75.205017, 39.967209 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3388", "lat": "39.951328", "lon": "-75.23381" }, "geometry": { "type": "Point", "coordinates": [ -75.23381, 39.951328 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3306", "lat": "39.939055", "lon": "-75.158445" }, "geometry": { "type": "Point", "coordinates": [ -75.158445, 39.939055 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3301", "lat": "40.00546", "lon": "-75.10714" }, "geometry": { "type": "Point", "coordinates": [ -75.10714, 40.00546 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3307", "lat": "40.046395", "lon": "-75.123332" }, "geometry": { "type": "Point", "coordinates": [ -75.123332, 40.046395 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3342", "lat": "40.032131", "lon": "-75.145638" }, "geometry": { "type": "Point", "coordinates": [ -75.145638, 40.032131 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3372", "lat": "39.9806", "lon": "-75.221021" }, "geometry": { "type": "Point", "coordinates": [ -75.221021, 39.9806 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3397", "lat": "40.01313", "lon": "-75.183865" }, "geometry": { "type": "Point", "coordinates": [ -75.183865, 40.01313 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3364", "lat": "40.006908", "lon": "-75.081879" }, "geometry": { "type": "Point", "coordinates": [ -75.081879, 40.006908 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3384", "lat": "39.95885", "lon": "-75.156213" }, "geometry": { "type": "Point", "coordinates": [ -75.156213, 39.95885 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3331", "lat": "40.00862", "lon": "-75.068749" }, "geometry": { "type": "Point", "coordinates": [ -75.068749, 40.00862 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3403", "lat": "39.995722", "lon": "-75.076597" }, "geometry": { "type": "Point", "coordinates": [ -75.076597, 39.995722 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3318", "lat": "39.95219", "lon": "-75.174477" }, "geometry": { "type": "Point", "coordinates": [ -75.174477, 39.95219 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3337", "lat": "39.97292", "lon": "-75.215271" }, "geometry": { "type": "Point", "coordinates": [ -75.215271, 39.97292 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3365", "lat": "40.027914", "lon": "-75.223471" }, "geometry": { "type": "Point", "coordinates": [ -75.223471, 40.027914 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3302", "lat": "39.973389", "lon": "-75.251694" }, "geometry": { "type": "Point", "coordinates": [ -75.251694, 39.973389 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3323", "lat": "39.93745", "lon": "-75.22526" }, "geometry": { "type": "Point", "coordinates": [ -75.22526, 39.93745 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3363", "lat": "40.056568", "lon": "-75.15715" }, "geometry": { "type": "Point", "coordinates": [ -75.15715, 40.056568 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3320", "lat": "40.03365", "lon": "-75.175853" }, "geometry": { "type": "Point", "coordinates": [ -75.175853, 40.03365 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3309", "lat": "40.04911", "lon": "-75.155518" }, "geometry": { "type": "Point", "coordinates": [ -75.155518, 40.04911 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3341", "lat": "39.9451", "lon": "-75.168731" }, "geometry": { "type": "Point", "coordinates": [ -75.168731, 39.9451 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3350", "lat": "40.052269", "lon": "-75.189652" }, "geometry": { "type": "Point", "coordinates": [ -75.189652, 40.052269 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3370", "lat": "39.994147", "lon": "-75.154497" }, "geometry": { "type": "Point", "coordinates": [ -75.154497, 39.994147 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3396", "lat": "39.945301", "lon": "-75.241913" }, "geometry": { "type": "Point", "coordinates": [ -75.241913, 39.945301 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3310", "lat": "39.963779", "lon": "-75.143722" }, "geometry": { "type": "Point", "coordinates": [ -75.143722, 39.963779 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3332", "lat": "39.98775", "lon": "-75.12923" }, "geometry": { "type": "Point", "coordinates": [ -75.12923, 39.98775 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3366", "lat": "40.008916", "lon": "-75.069024" }, "geometry": { "type": "Point", "coordinates": [ -75.069024, 40.008916 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3415", "lat": "39.99559", "lon": "-75.150511" }, "geometry": { "type": "Point", "coordinates": [ -75.150511, 39.99559 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3416", "lat": "40.01468", "lon": "-75.1565" }, "geometry": { "type": "Point", "coordinates": [ -75.1565, 40.01468 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3407", "lat": "39.94844", "lon": "-75.23565" }, "geometry": { "type": "Point", "coordinates": [ -75.23565, 39.94844 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3408", "lat": "39.986019", "lon": "-75.231319" }, "geometry": { "type": "Point", "coordinates": [ -75.231319, 39.986019 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3393", "lat": "40.032501", "lon": "-75.180206" }, "geometry": { "type": "Point", "coordinates": [ -75.180206, 40.032501 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3409", "lat": "40.01977", "lon": "-75.07345" }, "geometry": { "type": "Point", "coordinates": [ -75.07345, 40.01977 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3420", "lat": "40.01041", "lon": "-75.15912" }, "geometry": { "type": "Point", "coordinates": [ -75.15912, 40.01041 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3361", "lat": "39.94955", "lon": "-75.147424" }, "geometry": { "type": "Point", "coordinates": [ -75.147424, 39.94955 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3383", "lat": "39.975607", "lon": "-75.228149" }, "geometry": { "type": "Point", "coordinates": [ -75.228149, 39.975607 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3385", "lat": "39.914482", "lon": "-75.163879" }, "geometry": { "type": "Point", "coordinates": [ -75.163879, 39.914482 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3321", "lat": "39.914482", "lon": "-75.163879" }, "geometry": { "type": "Point", "coordinates": [ -75.163879, 39.914482 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3328", "lat": "40.112806", "lon": "-75.004469" }, "geometry": { "type": "Point", "coordinates": [ -75.004469, 40.112806 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3423", "lat": "39.98578", "lon": "-75.11282" }, "geometry": { "type": "Point", "coordinates": [ -75.11282, 39.98578 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3419", "lat": "40.02955", "lon": "-75.1382" }, "geometry": { "type": "Point", "coordinates": [ -75.1382, 40.02955 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3312", "lat": "40.011222", "lon": "-75.150798" }, "geometry": { "type": "Point", "coordinates": [ -75.150798, 40.011222 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3334", "lat": "40.035858", "lon": "-75.02404" }, "geometry": { "type": "Point", "coordinates": [ -75.02404, 40.035858 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3380", "lat": "40.072979", "lon": "-75.171623" }, "geometry": { "type": "Point", "coordinates": [ -75.171623, 40.072979 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3386", "lat": "40.020203", "lon": "-75.095321" }, "geometry": { "type": "Point", "coordinates": [ -75.095321, 40.020203 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3333", "lat": "40.01472", "lon": "-75.132501" }, "geometry": { "type": "Point", "coordinates": [ -75.132501, 40.01472 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3394", "lat": "39.99443", "lon": "-75.135628" }, "geometry": { "type": "Point", "coordinates": [ -75.135628, 39.99443 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3335", "lat": "39.967949", "lon": "-75.16021" }, "geometry": { "type": "Point", "coordinates": [ -75.16021, 39.967949 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3322", "lat": "40.105221", "lon": "-75.001367" }, "geometry": { "type": "Point", "coordinates": [ -75.001367, 40.105221 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3422", "lat": "40.024196", "lon": "-75.08619" }, "geometry": { "type": "Point", "coordinates": [ -75.08619, 40.024196 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3358", "lat": "39.950981", "lon": "-75.164948" }, "geometry": { "type": "Point", "coordinates": [ -75.164948, 39.950981 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3378", "lat": "39.91634", "lon": "-75.245651" }, "geometry": { "type": "Point", "coordinates": [ -75.245651, 39.91634 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3336", "lat": "39.917782", "lon": "-75.17112" }, "geometry": { "type": "Point", "coordinates": [ -75.17112, 39.917782 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3389", "lat": "40.021519", "lon": "-75.044472" }, "geometry": { "type": "Point", "coordinates": [ -75.044472, 40.021519 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3313", "lat": "39.928169", "lon": "-75.185661" }, "geometry": { "type": "Point", "coordinates": [ -75.185661, 39.928169 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3359", "lat": "39.92749", "lon": "-75.218086" }, "geometry": { "type": "Point", "coordinates": [ -75.218086, 39.92749 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3360", "lat": "39.955448", "lon": "-75.171623" }, "geometry": { "type": "Point", "coordinates": [ -75.171623, 39.955448 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3399", "lat": "40.009382", "lon": "-75.087731" }, "geometry": { "type": "Point", "coordinates": [ -75.087731, 40.009382 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3392", "lat": "39.91814", "lon": "-75.242248" }, "geometry": { "type": "Point", "coordinates": [ -75.242248, 39.91814 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3404", "lat": "40.06842", "lon": "-75.066811" }, "geometry": { "type": "Point", "coordinates": [ -75.066811, 40.06842 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3391", "lat": "39.992977", "lon": "-75.167503" }, "geometry": { "type": "Point", "coordinates": [ -75.167503, 39.992977 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3417", "lat": "39.93444", "lon": "-75.199261" }, "geometry": { "type": "Point", "coordinates": [ -75.199261, 39.93444 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3410", "lat": "39.974708", "lon": "-75.236699" }, "geometry": { "type": "Point", "coordinates": [ -75.236699, 39.974708 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3411", "lat": "39.965686", "lon": "-75.232641" }, "geometry": { "type": "Point", "coordinates": [ -75.232641, 39.965686 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3421", "lat": "40.034698", "lon": "-75.105317" }, "geometry": { "type": "Point", "coordinates": [ -75.105317, 40.034698 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3326", "lat": "39.940861", "lon": "-75.167816" }, "geometry": { "type": "Point", "coordinates": [ -75.167816, 39.940861 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3418", "lat": "39.926365", "lon": "-75.186364" }, "geometry": { "type": "Point", "coordinates": [ -75.186364, 39.926365 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3339", "lat": "39.974819", "lon": "-75.150581" }, "geometry": { "type": "Point", "coordinates": [ -75.150581, 39.974819 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3340", "lat": "39.967464", "lon": "-75.147088" }, "geometry": { "type": "Point", "coordinates": [ -75.147088, 39.967464 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3314", "lat": "40.058319", "lon": "-75.163292" }, "geometry": { "type": "Point", "coordinates": [ -75.163292, 40.058319 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3357", "lat": "39.96983", "lon": "-75.25361" }, "geometry": { "type": "Point", "coordinates": [ -75.25361, 39.96983 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3362", "lat": "40.01595", "lon": "-75.17032" }, "geometry": { "type": "Point", "coordinates": [ -75.17032, 40.01595 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3303", "lat": "39.94422", "lon": "-75.16541" }, "geometry": { "type": "Point", "coordinates": [ -75.16541, 39.94422 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3412", "lat": "39.984779", "lon": "-75.169228" }, "geometry": { "type": "Point", "coordinates": [ -75.169228, 39.984779 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3329", "lat": "39.96767", "lon": "-75.14785" }, "geometry": { "type": "Point", "coordinates": [ -75.14785, 39.96767 ] } }
+,
+{ "type": "Feature", "properties": { "school_code": "3304", "lat": "39.977514", "lon": "-75.145977" }, "geometry": { "type": "Point", "coordinates": [ -75.145977, 39.977514 ] } }
+
+]
+}
