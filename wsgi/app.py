@@ -10,6 +10,27 @@ conn = engine.connect()
 def hello():
     return 'Hello World!'
 
+@app.route('/api/schools/totals/<snapshot>')
+def school_totals(snapshot):
+    items = select([
+        func.sum(Budget.c.amount), Ulcs.c.ulcs])\
+        .select_from(Budget.join(Item).join(Ulcs).join(Snapshot))\
+        .where(Snapshot.c.snapshot==snapshot)\
+        .where(Item.c.item != 'Total')\
+        .group_by(Ulcs.c.ulcs)
+
+    sums = []
+
+    for amt,ulcs in conn.execute(items):
+        sums.append({
+            'ulcs': { 'ulcs': ulcs,
+                      'link': 'http://%s/budget/%s' % (request.host, ulcs) },
+            'total': amt
+        })
+
+    return dumps(sums)
+
+
 @app.route('/api/dates')
 def dates():
     snapshots = {}
