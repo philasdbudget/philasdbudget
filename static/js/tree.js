@@ -1,45 +1,3 @@
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
-
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="http://d3js.org/d3.v3.js"></script>
-    <script type="http://d3js.org/d3.layout.js"></script>
-    <script src="/js/tree.js"></script>
-    <style type="text/css">
-
-.chart {
-  display: block;
-  margin: auto;
-  margin-top: 40px;
-}
-
-text {
-  font-size: 11px;
-}
-
-rect {
-  fill: none;
-}
-
-    </style>
-  </head>
-  <body>
-    <div id="body">
-      <div id="footer">
-        d3.layout.treemap
-        <div class="hint">click or option-click to descend or ascend</div>
-        <div><select>
-          <option value="size">Size</option>
-          <option value="count">Count</option>
-        </select></div>
-      </div>
-    </div>
-    <script type="text/javascript">
-
 var w = 1280 - 80,
     h = 800 - 180,
     x = d3.scale.linear().range([0, w]),
@@ -63,6 +21,8 @@ var svg = d3.select("#body").append("div")
     .attr("height", h)
   .append("svg:g")
     .attr("transform", "translate(.5,.5)");
+
+data = ([32,33,34], String)
 
 d3.json("flare.json", function(data) {
   node = root = data;
@@ -127,7 +87,3 @@ function zoom(d) {
   node = d;
   d3.event.stopPropagation();
 }
-
-    </script>
-  </body>
-</html>

@@ -10,31 +10,38 @@ var school_points;
 var school_points = $.getJSON("/api/schools",
 	function(json) { school_points = json;});
 
-function create_handler(ulcs) {
+function create_handler(ulcs, name, address) {
 	return function () {
-		school_summary(ulcs);
+		school_summary(ulcs, name, address);
 	};
 };
 
 $(window).load(function() {
 	for (var i = 0; i < school_points.length; i++) {
 	    var ulcs = school_points[i].ulcs;
+	    var name = school_points[i].school_name;
+	    var address = school_points[i].address;
 	    var circle = L.circle([school_points[i].geom[1], 
-	    	school_points[i].geom[0]], 10, {
-	    	color: 'red',
-	    	fillColor: 'red',
-	    	fillOpacity: 0.5,
-	    	id: school_points[i].ulcs,
+	    	school_points[i].geom[0]], 50, {
 	    })
-	    .on('click', create_handler(ulcs))
+	    .on('click', create_handler(ulcs, name, address))
 	    .addTo(map);
 	};
 });
 
 
 
-function school_summary (ulcs) {
+function school_summary (ulcs, name, address) {
+	var summary_count = $(".school_summary").length;
+	if (summary_count == 3) {
+		$('.school_summary').first().remove();
+	}
 	$.getJSON("/api/budget/" + ulcs + "/181", function(data) {
-		$(".school-summary").append("<h1>This is a test</h1>");
+		var html_string = "";
+		for (var i = 0; i < data.items.length; i++) {
+			html_string += "<li>" + data.items[i].item + ": $" + data.items[i].amount + "</li>";
+		};
+		div = '<div class="school_summary span3"><h3>' + name + '</h3>' + '<h4>' + address + '</h4>' + '<ul>' + html_string + '</ul></div>'
+		$(".school-summaries").append(div);
 	});
 };
