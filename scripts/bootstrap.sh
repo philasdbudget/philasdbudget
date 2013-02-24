@@ -56,8 +56,7 @@ server {
 
     location / { try_files $uri @flaskapp; }
     location @flaskapp {
-      include uwsgi_params;
-      uwsgi_pass 127.0.0.1:5000;
+      proxy_pass http://127.0.0.1:5000;
     }
 }
 EOF
@@ -74,13 +73,14 @@ UPSTART_FILE="/etc/init/phillysd.conf"
 if [ ! -e $UPSTART_FILE ];
 then
     cat <<EOF > $UPSTART_FILE
-description "uwsgi tiny instance"
+description "unicorn"
 
 start on runlevel [2345]
 stop on runlevel [06]
 
 chdir /vagrant/wsgi
-exec /home/vagrant/envs/phillysd/bin/uwsgi --master --processes 2 --die-on-term -s :5000 --module app --callable app
+exec /home/vagrant/envs/phillysd/bin/gunicorn app:app -b 0.0.0.0:5000
+
 EOF
     service phillysd start
 fi
