@@ -20,8 +20,7 @@ $(window).load(function() {
 	for (var i = 0; i < school_points.length; i++) {
 	    var ulcs = school_points[i].ulcs;
 	    var circle = L.circle([school_points[i].geom[1], 
-	    	school_points[i].geom[0]], 10, {
-	    	color: 'red',
+	    	school_points[i].geom[0]], 50, {
 	    	fillColor: 'red',
 	    	fillOpacity: 0.5,
 	    	id: school_points[i].ulcs,
@@ -35,6 +34,14 @@ $(window).load(function() {
 
 function school_summary (ulcs) {
 	$.getJSON("/api/budget/" + ulcs + "/181", function(data) {
-		$(".school-summary").append("<h1>This is a test</h1>");
+		var html_string;
+		console.log(data.items)
+		for (var i = 0; i < data.items.length; i++) {
+			console.log(data.items[i])
+			html_string += "<li>" + data.items[i].item + ":" + data.items[i].amount + "</li>";
+		};
+		div = '<div class="school_summary"><h1>' + ulcs + '</h1>' + '<ul>' + html_string + '</ul></div>'
+		console.log(div)
+		$(".school-summaries").append(div);
 	});
 };
