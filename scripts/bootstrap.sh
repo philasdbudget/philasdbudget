@@ -1,3 +1,11 @@
+#!/bin/bash
+
+# must be run as root
+if [ `whoami` != "root" ]; then
+  echo "This installation must be run as root."
+  exit 1
+fi
+
 DB_USER='phillysd'
 DB_PASS='phillysd'
 DB_DATABASE='phillysd'
