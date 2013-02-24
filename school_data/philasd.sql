@@ -4,7 +4,7 @@
 DROP TABLE IF EXISTS school_location;
 CREATE TABLE school_location (
   id serial,
-  school_code integer);
+  school_code varchar(20));
 
 SELECT AddGeometryColumn('school_location', 'geom', 4326, 'POINT', 2);
 
@@ -141,7 +141,7 @@ CREATE TABLE TEACHER_ATTEND (
 
 DROP TABLE IF EXISTS school_location_tmp;
 CREATE TABLE school_location_tmp (
-  school_code integer,
+  school_code varchar(20),
   lat real,
   lng real);
 
