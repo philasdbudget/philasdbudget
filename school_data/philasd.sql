@@ -1,3 +1,13 @@
+--
+-- Table for school locations
+--
+DROP TABLE IF EXISTS school_location;
+CREATE TABLE school_location (
+  id serial,
+  school_code integer);
+
+SELECT AddGeometryColumn('school_location', 'geom', 4326, 'POINT', 2);
+
 -- ----------------------------
 --  Table structure for SCHOOL_ENROLLMENT
 -- ----------------------------
@@ -127,3 +137,18 @@ CREATE TABLE TEACHER_ATTEND (
 \copy school_student FROM 'school_student.csv' DELIMITER ',' CSV HEADER
 \copy school_suspensions FROM 'school_suspensions.csv' DELIMITER ',' CSV HEADER
 \copy teacher_attend FROM 'teacher_attend.csv' DELIMITER ',' CSV HEADER
+
+
+DROP TABLE IF EXISTS school_location_tmp;
+CREATE TABLE school_location_tmp (
+  school_code integer,
+  lat real,
+  lng real);
+
+\copy school_location_tmp FROM 'schools_geocoded.csv' DELIMITER ',' CSV HEADER
+
+INSERT INTO school_location (school_code, geom)
+  SELECT school_code, ST_SetSRID(makepoint(lng, lat), 4326)
+  FROM school_location_tmp;
+
+DROP TABLE IF EXISTS school_location_tmp;
