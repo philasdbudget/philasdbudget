@@ -8,7 +8,8 @@ charter_csv = open('./SchoolMetaDataNotes/charterinformation.csv', 'rU')
 school_reader = csv.DictReader(school_csv)
 charter_reader = csv.DictReader(charter_csv)
 
-g = geocoders.Yahoo('YQEyGPDV34FG4bXzx_UKz0hQJjlnwOQ2pBjOPzIbnZ.xaMD9lln5zYAXkeyTj3O99K84AZmD6KX50BDkM57rx42T_chc0kg-')
+# Make Sure to add Yahoo API key #
+g = geocoders.Yahoo()
 school_long_lat.write("school_code,lat,lng")
 
 print "Geocoding Philadelphia School District Schools"
