@@ -48,3 +48,6 @@ _install.log
 *.pdf
 
 *.tar.gz
+
+
+wsgi/settings.py

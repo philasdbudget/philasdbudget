@@ -5,3 +5,4 @@ Werkzeug==0.8.3
 argparse==1.2.1
 psycopg2==2.4.6
 wsgiref==0.1.2
+GeoAlchemy==0.7.1
