@@ -82,3 +82,10 @@ source ~/envs/phillysd/bin/activate
 # Install requirements
 cd /vagrant
 pip install -r requirements.txt
+
+# Copy settings file
+cp wsgi/settings.py.default wsgi/settings.py
+
+# If you did the normal vagrant install then the default
+# settings are fine, otherwise you should fix them up:
+vim wsgi/settings.py
