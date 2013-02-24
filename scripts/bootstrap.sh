@@ -6,11 +6,13 @@ if [ `whoami` != "root" ]; then
   exit 1
 fi
 
+set -x
+
 DB_USER='phillysd'
 DB_PASS='phillysd'
 DB_DATABASE='phillysd'
 
-apt-get install -y postgresql-9.1 postgresql-9.1-postgis postgis postgresql postgresql-server-dev-9.1
+apt-get install -y postgresql-9.1 postgresql-9.1-postgis postgis postgresql postgresql-server-dev-9.1 nginx
 apt-get install -y python-setuptools build-essential python-dev
 
 sudo -u postgres psql -c '\du' | grep "^ $DB_USER"
@@ -38,4 +40,47 @@ if [ $? -eq 1 ] ; then
     sudo -u postgres psql $DB_DATABASE -c "alter table geometry_columns owner to $DB_USER";
     sudo -u postgres psql $DB_DATABASE -c "alter view geography_columns owner to $DB_USER";
 
+fi
+
+NGINX_DEF="/etc/nginx/sites-available/phillysd"
+NGINX_AVAIL="/etc/nginx/sites-enabled/000_phillysd"
+
+if [ ! -e $NGINX_DEF ];
+then
+    cat > $NGINX_DEF <<EOF
+server {
+    listen       80;
+    server_name  _;
+
+    root /vagrant/static;
+
+    location / { try_files $uri @flaskapp; }
+    location @flaskapp {
+      include uwsgi_params;
+      uwsgi_pass 127.0.0.1:5000;
+    }
+}
+EOF
+
+fi
+
+if [ ! -e $NGINX_AVAIL ];
+then
+    ln -s $NGINX_DEF $NGINX_AVAIL
+    sudo service nginx restart
+fi
+
+UPSTART_FILE="/etc/init/phillysd.conf"
+if [ ! -e $UPSTART_FILE ];
+then
+    cat <<EOF > $UPSTART_FILE
+description "uwsgi tiny instance"
+
+start on runlevel [2345]
+stop on runlevel [06]
+
+chdir /vagrant/wsgi
+exec /home/vagrant/envs/phillysd/bin/uwsgi --master --processes 2 --die-on-term -s :5000 --module app --callable app
+EOF
+    service phillysd start
 fi
