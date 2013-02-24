@@ -1,4 +1,5 @@
 from models import *
+from settings import ROOT
 from sqlalchemy import create_engine
 from flask import Flask, request
 from json import dumps
@@ -13,20 +14,31 @@ def hello():
 @app.route('/api/schools/totals/<snapshot>')
 def school_totals(snapshot):
     items = select([
-        func.sum(Budget.c.amount), Ulcs.c.ulcs])\
-        .select_from(Budget.join(Item).join(Ulcs).join(Snapshot))\
+        func.sum(Budget.c.amount),
+        Ulcs.c.ulcs])\
+        .select_from(Budget.join(Item)\
+                     .join(Ulcs)\
+                     .join(Snapshot))\
         .where(Snapshot.c.snapshot==snapshot)\
         .where(Item.c.item != 'Total')\
-        .group_by(Ulcs.c.ulcs)
+        .group_by(Ulcs.c.ulcs)\
+        .apply_labels()
+
+    school_query = select([SchoolEnrollment])
 
     sums = []
 
     for amt,ulcs in conn.execute(items):
-        sums.append({
-            'ulcs': { 'ulcs': ulcs,
-                      'link': 'http://%s/api/budget/%s' % (request.host, ulcs) },
-            'total': amt
-        })
+        enrollment = conn.execute(school_query.where(SchoolEnrollment.c.school_code==ulcs)).fetchone()
+
+        if enrollment:
+            sums.append({
+                'encrollment': enrollment.sch_enrollment,
+                'ulcs': { 'ulcs': ulcs,
+                          'link': 'http://%s/api/budget/%s' % (ROOT, ulcs) },
+                'total': amt,
+                'total_norm': amt / enrollment.sch_enrollment
+            })
 
     return dumps(sums)
 
@@ -49,7 +61,7 @@ def schools():
             'ulcs': ulcs,
             'geom': map(lambda z: "%2.5f" % z,
                         row['school_location_geom'].coords(engine)),
-            'link': 'http://%s/api/budget/%s' % (request.host, ulcs)
+            'link': 'http://%s/api/budget/%s' % (ROOT, ulcs)
         })
     return dumps(schools)
 
@@ -65,7 +77,7 @@ def years_for_school(school):
         snid = row['snapshots_snapshot']
         years[snid] = {
             'description': row['snapshots_descr'],
-            'link': 'http://%s/api/budget/%s/%s' % (request.host, school, snid)
+            'link': 'http://%s/api/budget/%s/%s' % (ROOT, school, snid)
         }
 
     return dumps(years)
@@ -82,12 +94,12 @@ def budget(school, snapshot):
         budget.append(
             {'item': row['item_item'],
              'id': row['item_id'],
-             'link': 'http://%s/api/budgetitem/%s' % (request.host, row['item_id']),
+             'link': 'http://%s/api/budgetitem/%s' % (ROOT, row['item_id']),
              'amount': row['budget_amount']})
 
 
     ulcs = { 'ulcs': school,
-             'link': 'http://%s/api/budget/%s' % (request.host, school) }
+             'link': 'http://%s/api/budget/%s' % (ROOT, school) }
 
     budget = { 'school': ulcs,
                'snapshot': snapshot,
@@ -109,7 +121,7 @@ def budget_item(itemid=None):
             items.append(
                 {'item': row['item_item'],
                  'id': row['item_id'],
-                 'link': 'http://%s/api/budgetitem/%s' % (request.host, row['item_id'])})
+                 'link': 'http://%s/api/budgetitem/%s' % (ROOT, row['item_id'])})
 
         return dumps(items)
 
@@ -137,7 +149,7 @@ def budget_item(itemid=None):
         ulcses.append(
             {'item': row['item_item'],
              'amount': row['budget_amount'],
-             'link': 'http://%s/api/budget/%s/%s' % (request.host, ulcs, snap)
+             'link': 'http://%s/api/budget/%s/%s' % (ROOT, ulcs, snap)
          })
 
     return dumps(budget)
