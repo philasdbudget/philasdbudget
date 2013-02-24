@@ -14,7 +14,9 @@ SchoolEnrollment = Table('school_enrollment', metadata,
 SchoolEthnicityLowIncome = Table('school_ethnicity_low_income',
                                  metadata, autoload=True)
 
-SchoolInformation = Table('school_information', metadata, autoload=True)
+SchoolInformation = Table('school_information', metadata,
+                          Column('school_code', None, ForeignKey('ulcs.ulcs')),
+                          autoload=True)
 SchoolPSSA = Table('school_pssa', metadata, autoload=True)
 SeriousIncidents = Table('school_serious_incidents', metadata, autoload=True)
 SchoolStudent = Table('school_student', metadata, autoload=True)
