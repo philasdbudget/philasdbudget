@@ -24,7 +24,7 @@ def school_totals(snapshot):
     for amt,ulcs in conn.execute(items):
         sums.append({
             'ulcs': { 'ulcs': ulcs,
-                      'link': 'http://%s/budget/%s' % (request.host, ulcs) },
+                      'link': 'http://%s/api/budget/%s' % (request.host, ulcs) },
             'total': amt
         })
 
@@ -49,7 +49,7 @@ def schools():
             'ulcs': ulcs,
             'geom': map(lambda z: "%2.5f" % z,
                         row['school_location_geom'].coords(engine)),
-            'link': 'http://%s/budget/%s' % (request.host, ulcs)
+            'link': 'http://%s/api/budget/%s' % (request.host, ulcs)
         })
     return dumps(schools)
 
@@ -65,7 +65,7 @@ def years_for_school(school):
         snid = row['snapshots_snapshot']
         years[snid] = {
             'description': row['snapshots_descr'],
-            'link': 'http://%s/budget/%s/%s' % (request.host, school, snid)
+            'link': 'http://%s/api/budget/%s/%s' % (request.host, school, snid)
         }
 
     return dumps(years)
@@ -82,12 +82,12 @@ def budget(school, snapshot):
         budget.append(
             {'item': row['item_item'],
              'id': row['item_id'],
-             'link': 'http://%s/budgetitem/%s' % (request.host, row['item_id']),
+             'link': 'http://%s/api/budgetitem/%s' % (request.host, row['item_id']),
              'amount': row['budget_amount']})
 
 
     ulcs = { 'ulcs': school,
-             'link': 'http://%s/budget/%s' % (request.host, school) }
+             'link': 'http://%s/api/budget/%s' % (request.host, school) }
 
     budget = { 'school': ulcs,
                'snapshot': snapshot,
@@ -109,8 +109,8 @@ def budget_item(itemid=None):
             items.append(
                 {'item': row['item_item'],
                  'id': row['item_id'],
-                 'link': 'http://%s/budgetitem/%s' % (request.host, row['item_id'])})
-                 
+                 'link': 'http://%s/api/budgetitem/%s' % (request.host, row['item_id'])})
+
         return dumps(items)
 
     # Return the requested budget item
@@ -137,7 +137,7 @@ def budget_item(itemid=None):
         ulcses.append(
             {'item': row['item_item'],
              'amount': row['budget_amount'],
-             'link': 'http://%s/budget/%s/%s' % (request.host, ulcs, snap)
+             'link': 'http://%s/api/budget/%s/%s' % (request.host, ulcs, snap)
          })
 
     return dumps(budget)
