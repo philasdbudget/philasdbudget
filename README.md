@@ -35,6 +35,8 @@ scripts/create_sql.py data_dir budget_data.sql
 There is a Vagrantfile included that can be used to start
 up a new database server to work with the database
 
+#### Vagrant & Database
+
 ```bash
 
 vagrant up
@@ -45,12 +47,16 @@ vagrant ssh
 # Load the budget data
 # Password: phillysd
 psql phillysd phillysd -h localhost -f /vagrant/budget_data.sql
-psql phillysd phillysd -h localhost -f /vagrant/normalize.sql
+psql phillysd phillysd -h localhost -f /vagrant/scripts/normalize.sql
 
 # Load extra school data
 # You have to be in /vagrant/school_data for the data to load properly
 cd /vagrant/school_data
-psql phillysd phillysd -h localhost -f
+psql phillysd phillysd -h localhost -f philasd.sql
 
 exit
 ```
+
+#### Python
+
+TODO
