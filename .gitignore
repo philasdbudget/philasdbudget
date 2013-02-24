@@ -1,5 +1,6 @@
 # C extensions
 *.so
+scripts/txt
 
 # Packages
 *.egg
