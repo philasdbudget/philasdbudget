@@ -8,53 +8,64 @@ The original pdfs can be found here:
 https://apps.philasd.org/SchoolBudgets/
 
 ### API
-```json
+```
 /api/schools
+```
 
-Example:
+```json
 [{
-  school_name2: "GIRARD ACADEMIC MUSIC PROGRAM",
-  school_name: "GIRARD ACADEMIC MUSIC PROGRAM",
-  geom: [
+  "school_name2": "GIRARD ACADEMIC MUSIC PROGRAM",
+  "school_name": "GIRARD ACADEMIC MUSIC PROGRAM",
+  "geom": [
     "-75.18256",
     "39.92219"
     ],
-    link: "http://localhost:9449/api/budget/2410",
-    address: "2136 W. RITNER ST.",
-    ulcs: "2410"
+    "link": "http://localhost:9449/api/budget/2410",
+    "address": "2136 W. RITNER ST.",
+    "ulcs": "2410"
 },
 ...]
+```
 
+```
 /api/budget/{schoolid}
-
-Example (/api/budget/2410):
+/api/budget/2410
+```
+```json
 {
-  61: {
-    link: "http://localhost:9449/api/budget/2410/61",
-    description: "FY09 School Budgets (February 2009)"
-},
-...]
+  "61": {
+    "link": "http://localhost:9449/api/budget/2410/61",
+    "description": "FY09 School Budgets (February 2009)"
+  },
+  ...
+}
+```
 
+```
 /api/budget/{schoolid}/{snapshot}
+/api/budget/2410/101
+```
 
-Example (/api/budget/2410/101)
+```json
 {
-  school: {
-    ulcs: "2410",
-    link: "http://localhost:9449/api/budget/2410"
+  "school": {
+    "ulcs": "2410",
+    "link": "http://localhost:9449/api/budget/2410"
     },
-  snapshot: "101",
-  items: [
+  "snapshot": "101",
+  "items": [
   {
-    item: "Books & Instructional Aids",
-    amount: 48350,
-    link: "http://localhost:9449/api/budgetitem/5",
-    id: 5
+    "item": "Books & Instructional Aids",
+    "amount": 48350,
+    "link": "http://localhost:9449/api/budgetitem/5",
+    "id": 5
   },
   ...]
 }
+```
 
-/api/schools/totals/<snapshot>
+```
+/api/schxools/totals/<snapshot>
 /api/dates
 /api/budgetitem/
 /api/budgetitem/<itemid>
