@@ -54,11 +54,17 @@ def dates():
 @app.route('/api/schools')
 def schools():
     schools = []
-    q = select([Ulcs.join(SchoolLocations)]).apply_labels()
+    q = select([Ulcs\
+                .join(SchoolLocations)\
+                .join(SchoolInformation)]).apply_labels()
+
     for row in conn.execute(q):
         ulcs = row['ulcs_ulcs']
         schools.append({
             'ulcs': ulcs,
+            'school_name': row['school_information_school_name_1'],
+            'school_name2': row['school_information_school_name_2'],
+            'address': row['school_information_address'],
             'geom': map(lambda z: "%2.5f" % z,
                         row['school_location_geom'].coords(engine)),
             'link': 'http://%s/api/budget/%s' % (ROOT, ulcs)
