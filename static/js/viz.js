@@ -35,6 +35,8 @@ $.getJSON('/api/schools/totals/181', function (data) {
         }
     });
 
+    var maxv = data[2].total_norm;
+
     x.domain(data.map(function(d) { return d.ulcs.ulcs; }));
     y.domain([0, d3.max(data, function(d) { return d.total_norm; })]);
 
@@ -60,5 +62,8 @@ $.getJSON('/api/schools/totals/181', function (data) {
         .attr("x", function(d) { return x(d.ulcs.ulcs); })
         .attr("width", x.rangeBand())
         .attr("y", function(d) { return y(d.total_norm); })
-        .attr("height", function(d) { return height - y(d.total_norm); });
+        .attr("height", function(d) { return height - y(d.total_norm); })
+        .attr("fill", function(d) {
+            return "rgb(70, 20, 60)";
+        });
 });
