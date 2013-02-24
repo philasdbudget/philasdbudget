@@ -23,7 +23,10 @@ def schools():
     schools = []
     q = select([Ulcs])
     for pk, ulcs in conn.execute(q):
-        schools.append(ulcs)
+        schools.append({
+            'ulcs': ulcs,
+            'link': 'http://%s/budget/%s' % (request.host, ulcs)
+        })
     return dumps(schools)
 
 @app.route('/budget/<school>')
@@ -52,7 +55,49 @@ def budget(school, snapshot):
         .apply_labels()
 
     for row in conn.execute(q):
-        budget.append({'item': row['item_item'], 'amount': row['budget_amount']})
+        budget.append(
+            {'item': row['item_item'],
+             'id': row['item_id'],
+             'link': 'http://%s/budgetitem/%s' % (request.host, row['item_id']),
+             'amount': row['budget_amount']})
+
+
+    ulcs = { 'ulcs': school,
+             'link': 'http://%s/budget/%s' % (request.host, school) }
+
+    budget = { 'school': ulcs,
+               'snapshot': snapshot,
+               'items': budget }
+
+    return dumps(budget)
+
+@app.route('/budgetitem/<itemid>')
+def budget_item(itemid):
+    budget = {}
+    q = select([Budget.join(Item).join(Ulcs).join(Snapshot)])\
+        .where(Item.c.id==itemid)\
+        .apply_labels()
+
+    for row in conn.execute(q):
+        snap = row['snapshots_snapshot']
+        if snap in budget:
+            snaps = budget[snap]
+        else:
+            snaps = {}
+            budget[snap] = snaps
+
+        ulcs = row['ulcs_ulcs']
+        if ulcs in snaps:
+            ulcses = snaps[ulcs]
+        else:
+            ulcses = []
+            snaps[ulcs] = ulcses
+
+        ulcses.append(
+            {'item': row['item_item'],
+             'amount': row['budget_amount'],
+             'link': 'http://%s/budget/%s/%s' % (request.host, ulcs, snap)
+         })
 
     return dumps(budget)
 
