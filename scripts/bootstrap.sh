@@ -12,7 +12,7 @@ DB_USER='phillysd'
 DB_PASS='phillysd'
 DB_DATABASE='phillysd'
 
-sudo update-locale LANG=en_US.utf8
+update-locate LC_CTYPE="en_US.UTF-8" LC_ALL="en_US.UTF-8" LANG="en_US.UTF-8"
 
 echo "locale update line passed"
 
