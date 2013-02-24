@@ -3,6 +3,7 @@ DB_PASS='phillysd'
 DB_DATABASE='phillysd'
 
 apt-get install -y postgresql-9.1 postgresql-9.1-postgis postgis postgresql postgresql-server-dev-9.1
+apt-get install -y python-setuptools build-essential python-dev
 
 sudo -u postgres psql -c '\du' | grep "^ $DB_USER"
 if [ $? -eq 1 ] ; then

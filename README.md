@@ -35,6 +35,9 @@ scripts/create_sql.py data_dir budget_data.sql
 There is a Vagrantfile included that can be used to start
 up a new database server to work with the database
 
+If you don't want to use vagrant, the script in 'scripts/bootstrap.sh'
+should be more-or-less safe to run on your own machine.
+
 #### Vagrant & Database
 
 ```bash
@@ -59,4 +62,23 @@ exit
 
 #### Python
 
-TODO
+Create a virtualenv
+
+```bash
+# If you're using vagrant 'vagrant ssh' first:
+vagrant ssh
+
+# If you don't have pip or virtualenv installed
+sudo easy_install pip
+sudo pip install virtualenv
+
+# Create a new virtualenv wherever you want
+mkdir ~/envs/
+virtualenv ~/envs/phillysd
+
+# Activate it
+source ~/envs/phillysd/bin/activate
+
+# Install requirements
+cd /vagrant
+pip install -r requirements.txt
