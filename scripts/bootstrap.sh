@@ -6,13 +6,15 @@ if [ `whoami` != "root" ]; then
   exit 1
 fi
 
-sudo update-locale LANG=en_US.utf8
-
 set -x
 
 DB_USER='phillysd'
 DB_PASS='phillysd'
 DB_DATABASE='phillysd'
+
+sudo update-locale LANG=en_US.utf8
+
+echo "locale update line passed"
 
 apt-get install -y postgresql-9.1 postgresql-9.1-postgis postgis postgresql postgresql-server-dev-9.1 nginx
 apt-get install -y python-setuptools build-essential python-dev
