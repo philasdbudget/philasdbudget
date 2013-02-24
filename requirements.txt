@@ -1,8 +1,9 @@
 Flask==0.9
+GeoAlchemy==0.7.1
 Jinja2==2.6
 SQLAlchemy==0.8.0b2
 Werkzeug==0.8.3
 argparse==1.2.1
+gunicorn==0.17.2
 psycopg2==2.4.6
 wsgiref==0.1.2
-GeoAlchemy==0.7.1
