@@ -5,8 +5,6 @@ L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Li
     maxZoom: 18
 }).addTo(map);
 
-var school_points;
-
 var school_points = $.getJSON("/api/schools",
 	function(json) { school_points = json;});
 
@@ -17,16 +15,25 @@ function create_handler(ulcs, name, address) {
 };
 
 $(window).load(function() {
-	for (var i = 0; i < school_points.length; i++) {
-	    var ulcs = school_points[i].ulcs;
-	    var name = school_points[i].school_name;
-	    var address = school_points[i].address;
-	    var circle = L.circle([school_points[i].geom[1], 
-	    	school_points[i].geom[0]], 50, {
-	    })
-	    .on('click', create_handler(ulcs, name, address))
-	    .addTo(map);
-	};
+	$.getJSON("/api/schools",
+		function(school_points) {
+			console.log(school_points);
+			for (var i = 0; i < school_points.length; i++) {
+			    var ulcs = school_points[i].ulcs;
+			    var name = school_points[i].school_name;
+			    var address = school_points[i].address;
+			    var circle = L.circle([school_points[i].geom[1], 
+			    	school_points[i].geom[0]], 100, {
+			    		stroke: false,
+			    		color: '#03f',
+			    		fillColor: '#03f',
+			    		opacity: .5,
+			    		fillOpacity: .5,
+			    	})
+			    	.on('click', create_handler(ulcs, name, address))
+			    	.addTo(map);
+			};
+		});
 });
 
 
