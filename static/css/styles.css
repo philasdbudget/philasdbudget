@@ -3,6 +3,19 @@
     width: 700px;
 }
 
+.chart {
+    background: #294052;
+    margin: 5px;
+}
+.chart rect {
+    stroke: white;
+    fill: steelblue;
+}
+
+.chart text {
+    fill: white;
+}
+
 #parallel-coords {
     height: 600px;
     width: 200px;
