@@ -51,8 +51,8 @@ def school_totals(snapshot):
 def dates():
     snapshots = {}
     q = select([Snapshot])
-    for pk, snid, descr in conn.execute(q):
-        snapshots[snid] = descr
+    for row in conn.execute(q):
+        snapshots[row['snapshot']] = row['descr']
     return Response(dumps(snapshots), status=200, mimetype="application/json")
 
 @app.route('/api/schools')
