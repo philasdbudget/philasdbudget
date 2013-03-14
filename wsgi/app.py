@@ -1,11 +1,15 @@
 from models import *
 from settings import ROOT
 from sqlalchemy import create_engine
-from flask import Flask, request
+from flask import Flask, request, render_template
 from json import dumps
 
 app = Flask(__name__)
 conn = engine.connect()
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/api')
 def hello():
