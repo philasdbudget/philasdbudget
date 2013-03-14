@@ -37,7 +37,7 @@ def school_totals(snapshot):
 
         if enrollment:
             sums.append({
-                'encrollment': enrollment.sch_enrollment,
+                'enrollment': enrollment.sch_enrollment,
                 'ulcs': { 'ulcs': ulcs,
                           'link': 'http://%s/api/budget/%s' % (ROOT, ulcs) },
                 'total': amt,
