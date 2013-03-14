@@ -1,7 +1,7 @@
 from models import *
 from settings import ROOT
 from sqlalchemy import create_engine
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, Response
 from json import dumps
 
 app = Flask(__name__)
@@ -44,7 +44,7 @@ def school_totals(snapshot):
                 'total_norm': amt / enrollment.sch_enrollment
             })
 
-    return dumps(sums)
+    return Response(dumps(sums), status=200, mimetype="application/json")
 
 
 @app.route('/api/dates')
@@ -53,7 +53,7 @@ def dates():
     q = select([Snapshot])
     for pk, snid, descr in conn.execute(q):
         snapshots[snid] = descr
-    return dumps(snapshots)
+    return Response(dumps(snapshots), status=200, mimetype="application/json")
 
 @app.route('/api/schools')
 def schools():
@@ -77,7 +77,7 @@ def schools():
                         row['school_location_geom'].coords(engine)),
             'link': 'http://%s/api/budget/%s' % (ROOT, ulcs)
         })
-    return dumps(schools)
+    return Response(dumps(schools), status=200, mimetype="application/json")
 
 @app.route('/api/budget/<school>')
 def years_for_school(school):
@@ -94,7 +94,7 @@ def years_for_school(school):
             'link': 'http://%s/api/budget/%s/%s' % (ROOT, school, snid)
         }
 
-    return dumps(years)
+    return Response(dumps(years), status=200, mimetype="application/json")
 
 @app.route('/api/budget/<school>/<snapshot>')
 def budget(school, snapshot):
@@ -119,7 +119,7 @@ def budget(school, snapshot):
                'snapshot': snapshot,
                'items': budget }
 
-    return dumps(budget)
+    return Response(dumps(budget), status=200, mimetype="application/json")
 
 @app.route('/api/budgetitem/')
 @app.route('/api/budgetitem/<itemid>')
@@ -137,7 +137,7 @@ def budget_item(itemid=None):
                  'id': row['item_id'],
                  'link': 'http://%s/api/budgetitem/%s' % (ROOT, row['item_id'])})
 
-        return dumps(items)
+        return Response(dumps(items), status=200, mimetype="application/json")
 
     # Return the requested budget item
     budget = {}
@@ -166,7 +166,7 @@ def budget_item(itemid=None):
              'link': 'http://%s/api/budget/%s/%s' % (ROOT, ulcs, snap)
          })
 
-    return dumps(budget)
+    return Response(dumps(budget), status=200, mimetype="application/json")
 
 if __name__ == "__main__":
     app.debug = True
