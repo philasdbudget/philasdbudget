@@ -60,7 +60,10 @@ def schools():
     schools = []
     q = select([Ulcs\
                 .join(SchoolLocations)\
-                .join(SchoolInformation)]).apply_labels()
+                .join(SchoolInformation)\
+                .join(SchoolEnrollment)])\
+                .where(SchoolEnrollment.c.school_year=='2012-2013')\
+                .apply_labels()
 
     for row in conn.execute(q):
         ulcs = row['ulcs_ulcs']
@@ -69,6 +72,7 @@ def schools():
             'school_name': row['school_information_school_name_1'],
             'school_name2': row['school_information_school_name_2'],
             'address': row['school_information_address'],
+            'attendance': row['school_enrollment_sch_enrollment'],
             'geom': map(lambda z: "%2.5f" % z,
                         row['school_location_geom'].coords(engine)),
             'link': 'http://%s/api/budget/%s' % (ROOT, ulcs)
