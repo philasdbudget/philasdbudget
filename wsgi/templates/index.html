@@ -13,13 +13,6 @@
       }
     </style>
 
-    <!-- Leaflet CSS and JS -->
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
-     <!--[if lte IE 8]>
-         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
-     <![endif]-->
-    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-
 
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -29,7 +22,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
   </head>
 
     <body>
@@ -45,9 +37,8 @@
           <a class="brand" href="http://twitter.github.com/bootstrap/examples/starter-template.html#">Philadelphia School District School Budgets</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="http://twitter.github.com/bootstrap/examples/starter-template.html#">Home</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/starter-template.html#about">About</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/starter-template.html#contact">Contact</a></li>
+              <li class="active"><a href="http://phillyschools.info/">Home</a></li>
+              <li><a href="mailto:chris@cmbrown.org?subject=PhillySchools.Info">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -56,9 +47,13 @@
     <div class="container">
 
       <h1>PhillySchools.Info - An API for Philadelphia School District Budget Data</h1>
-      <p>While the Philadelphia school district has released a few important datasets on school performance, attendance, and other metrics for its schools, the school district's budget for schools remains opaque. Budgets for all schools are available in PDF format, but this is of little use to developers and those interested in conducting analyses on the school district's spending. During the education <a href="http://technical.ly/philly/2013/02/25/techcamp-philadelphia/">TechCamp</a> hackathon Chris Brown, Sean Goggins, Adam Hinz, and Bennett Huber worked to liberate this data.</p>
+      <p>While the Philadelphia school district has released a few important datasets on school performance, attendance, and other metrics for its schools, the school district's budget for schools remains opaque. Budgets for all schools are available in PDF format, but this is of little use to developers and those interested in conducting analyses on the school district's spending. During the education <a href="http://technical.ly/philly/2013/02/25/techcamp-philadelphia/">TechCamp</a> - hackathon sponsored by TechnicallyPhilly and the State Department - <a href="https://twitter.com/notthatbreezy">Chris Brown</a>, <a href="https://twitter.com/sgoggins">Sean Goggins</a>, <a href="https://twitter.com/ahinz"> Adam Hinz</a>, and <a href="https://twitter.com/bennethuber">Bennett Huber</a> worked to liberate this data.</p>
 
 <p>The API this website serves is the first tangible result from that effort. We are making available the line-item budgets for all Philadelphia School District schools for the last few years through a RESTful API. A description of the API and its endpoints is provided below. The hope is that developers and other interested parties can use this data in conjunction with other datasets from the schools to begin connecting the school expenditures to outcomes and ultimately help parents make decisions about their children's education. We will also be working on using this data to produce visualizations as well so stay tuned!</p>
+
+<p>If you have questions or suggestions, leave a comment at the bottom of the page or feel free to contact us at the link provided in the page header</p>
+
+<p>If you are interested in contributing to the project, check out the project on <a href="https://github.com/philasdbudget/philasdbudget">github</a></p>
 
 <h2>Description of the Data</h2>
 <h2>API</h2>
@@ -87,15 +82,13 @@
 <h3>School Budgets</h3>
 <p>In addition to basic school data, school budgets are available as well. Each school may have up to 6 budgets (1 for each of the last 6 years). The base url <code>/api/budget/{schoolid}</code> gives a list of available budgets for a given school.
 
-<pre><code class="prettyprint">
-/api/budget/{schoolid}
+<pre><code class="prettyprint">/api/budget/{schoolid}
 /api/budget/2410
 </code></pre>
 
-<pre><code class="prettyprint">json
-{
+<pre><code class="prettyprint">{
   "61": {
-    "link": "http://localhost:9449/api/budget/2410/61",
+    "link": "http://phillyschools.info/api/budget/2410/61",
     "description": "FY09 School Budgets (February 2009)"
   },
   ...
@@ -110,14 +103,14 @@
 <pre><code class="prettyprint">{
   "school": {
     "ulcs": "2410",
-    "link": "http://localhost:9449/api/budget/2410"
+    "link": "http://phillyschools.info/api/budget/2410"
     },
   "snapshot": "101",
   "items": [
   {
     "item": "Books &amp; Instructional Aids",
     "amount": 48350,
-    "link": "http://localhost:9449/api/budgetitem/5",
+    "link": "http://phillyschools.info/api/budgetitem/5",
     "id": 5
   },
   ...]
@@ -125,16 +118,34 @@
 </code></pre>
 
 <h3>Other Data</h3>
-<ul>
+<dl>
+  <dt><code>/api/schools/totals/&lt;snapshot&gt;</code></dt>
+  <dd>Total spending, total spending per student for a school in a given year</dd>
+  <dt><code>/api/dates</code></dt>
+  <dd>List of snapshot IDs and their corresponding fiscal year</dd>
+  <dt><code>/api/budgetitem</code></dt>
+  <dd>List of budget items in database</dd>
+  <dt><code>/api/budgetitem/&lt;itemid&gt;</code></dt>
+  <dd>Expenditures for a given budget item across all schools</dd>
+</dl>
 
-<p><code>
-/api/schools/totals/&lt;snapshot&gt;
-/api/dates
-/api/budgetitem/
-/api/budgetitem/&lt;itemid&gt;
-</code></p>
+<h3>Comments</h3>
 
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'phillyschoolsinfo'; // required: replace example with your forum shortname
 
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
 
     </div> <!-- /container -->
 
