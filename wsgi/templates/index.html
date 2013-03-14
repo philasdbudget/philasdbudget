@@ -6,6 +6,12 @@
     <meta name="description" content="School Districit Budget Data API">
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
 
     <!-- Leaflet CSS and JS -->
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
@@ -50,19 +56,92 @@
     <div class="container">
 
       <h1>PhillySchools.Info - An API for Philadelphia School District Budget Data</h1>
-      <p>Click up to 4 schools and compare their budgets and outcomes.</p>
+      <p>While the Philadelphia school district has released a few important datasets on school performance, attendance, and other metrics for its schools, the school district's budget for schools remains opaque. Budgets for all schools are available in PDF format, but this is of little use to developers and those interested in conducting analyses on the school district's spending. During the education <a href="http://technical.ly/philly/2013/02/25/techcamp-philadelphia/">TechCamp</a> hackathon Chris Brown, Sean Goggins, Adam Hinz, and Bennett Huber worked to liberate this data.</p>
 
-      <div id="map"></div>
+<p>The API this website serves is the first tangible result from that effort. We are making available the line-item budgets for all Philadelphia School District schools for the last few years through a RESTful API. A description of the API and its endpoints is provided below. The hope is that developers and other interested parties can use this data in conjunction with other datasets from the schools to begin connecting the school expenditures to outcomes and ultimately help parents make decisions about their children's education. We will also be working on using this data to produce visualizations as well so stay tuned!</p>
 
-      <div class="school-summaries">
-      </div>
+<h2>Description of the Data</h2>
+<h2>API</h2>
+<h3>Listing of Schools</h3>
+<p>The main API endpoint is <a href="/api/schools/">phillyschools.info/api/schools</a>. This provides a list of current schools. For each school information on the school's name, location, and ULCS code (the school district's unique identifier for schools).</p>
+
+<p><code class="prettyprint">
+/api/schools
+</code></p>
+
+<pre><code class="prettyprint">
+[{
+  "school_name2": "GIRARD ACADEMIC MUSIC PROGRAM",
+  "school_name": "GIRARD ACADEMIC MUSIC PROGRAM",
+  "geom": [
+    "-75.18256",
+    "39.92219"
+    ],
+    "link": "http://localhost:9449/api/budget/2410",
+    "address": "2136 W. RITNER ST.",
+    "ulcs": "2410"
+},
+...]
+</code></pre>
+
+<h3>School Budgets</h3>
+<p>In addition to basic school data, school budgets are available as well. Each school may have up to 6 budgets (1 for each of the last 6 years). The base url <code>/api/budget/{schoolid}</code> gives a list of available budgets for a given school.
+
+<pre><code class="prettyprint">
+/api/budget/{schoolid}
+/api/budget/2410
+</code></pre>
+
+<pre><code class="prettyprint">json
+{
+  "61": {
+    "link": "http://localhost:9449/api/budget/2410/61",
+    "description": "FY09 School Budgets (February 2009)"
+  },
+  ...
+}
+</code></pre>
+
+<p>To browse the specific budget for a school simply provide the snapshot ID as well (e.g.<code>phillyschools.info/api/budget/{schoolid}/{snapshot}</code>). For example, to return the </p>
+
+<pre><code class="prettyprint">/api/budget/2410/101
+</code></pre>
+
+<pre><code class="prettyprint">{
+  "school": {
+    "ulcs": "2410",
+    "link": "http://localhost:9449/api/budget/2410"
+    },
+  "snapshot": "101",
+  "items": [
+  {
+    "item": "Books &amp; Instructional Aids",
+    "amount": 48350,
+    "link": "http://localhost:9449/api/budgetitem/5",
+    "id": 5
+  },
+  ...]
+}
+</code></pre>
+
+<h3>Other Data</h3>
+<ul>
+
+<p><code>
+/api/schools/totals/&lt;snapshot&gt;
+/api/dates
+/api/budgetitem/
+/api/budgetitem/&lt;itemid&gt;
+</code></p>
+
+
+
     </div> <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="/js/map.js"></script>
     <script type="text/javascript">"/js/bootstrap.min.js"</script>
 
 </body>
